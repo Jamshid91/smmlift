@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/plugin/swiper.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container d-flex justify-between align-center">
+            <div class="d-flex align-center">
+                <div class="menu-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="#3A2360"/>
+                    </svg>
+                </div>
+                <a href="#" class="logo d-flex align-center">
+                    <img src="assets/images/svg/logo.svg" alt="logo">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list d-flex">
+                    <li class="active"><a href="#">Продукт</a></li>
+                    <li><a href="#tariff">Тарифы</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#">SMM Lift</a></li>
+                </ul>
+            </nav>
+            <!-- **** balance **** -->
+            <!-- <div class="header-balance d-flex align-center justify-between">
+                <div class="d-flex align-center">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.275 18.4065C1.64533 18.4065 1.10875 18.1848 0.66525 17.7413C0.22175 17.2978 0 16.7612 0 16.1315V2.275C0 1.64533 0.22175 1.10875 0.66525 0.66525C1.10875 0.22175 1.64533 0 2.275 0H16.1315C16.7612 0 17.2978 0.22175 17.7413 0.66525C18.1848 1.10875 18.4065 1.64533 18.4065 2.275V4.70325H16.1315V2.275H2.275V16.1315H16.1315V13.7032H18.4065V16.1315C18.4065 16.7612 18.1848 17.2978 17.7413 17.7413C17.2978 18.1848 16.7612 18.4065 16.1315 18.4065H2.275ZM10.2153 14.2032C9.66192 14.2032 9.18825 14.0084 8.79425 13.6188C8.40025 13.2291 8.20325 12.7572 8.20325 12.2032V6.21525C8.20325 5.66192 8.40025 5.18825 8.79425 4.79425C9.18825 4.40025 9.66192 4.20325 10.2153 4.20325H17.4005C17.9545 4.20325 18.4273 4.40025 18.819 4.79425C19.2107 5.18825 19.4065 5.66192 19.4065 6.21525V12.2063C19.4065 12.7554 19.2107 13.2256 18.819 13.6168C18.4273 14.0078 17.9545 14.2032 17.4005 14.2032H10.2153ZM17.4125 12.2032V6.20325H10.2032V12.2032H17.4125ZM13.2032 10.7032C13.6199 10.7032 13.9741 10.5574 14.2657 10.2657C14.5574 9.97408 14.7032 9.61992 14.7032 9.20325C14.7032 8.78658 14.5574 8.43242 14.2657 8.14075C13.9741 7.84908 13.6199 7.70325 13.2032 7.70325C12.7866 7.70325 12.4324 7.84908 12.1407 8.14075C11.8491 8.43242 11.7032 8.78658 11.7032 9.20325C11.7032 9.61992 11.8491 9.97408 12.1407 10.2657C12.4324 10.5574 12.7866 10.7032 13.2032 10.7032Z" fill="#AA89F8"/>
+                    </svg>
+                    <div class="balance d-flex align-center">
+                        <strong>1 690</strong> <span>₽</span>
+                    </div>
+                </div>
+                <button type="button" class="topUp-balance__btn btn">Пополнить</button>
+            </div> -->
+            <div class="header-btns">
+                <button type="button" class="create-account__btn btn">Создать аккаунт</button>
+                <button type="button" class="sign-in__btn btn2">Войти</button>
+            </div>
+
+            <!-- **** user-profile **** -->
+            <!-- <div class="user-profile d-flex align-center">
+                <img src="assets/images/png/avatar.png" alt="" class="avatar">
+                <div class="">
+                    <span class="user-name">Large_username_1230</span>
+                    <a href="mailto:username@domain.com" class="user-email">username@domain.com</a>
+                </div>
+            </div> -->
+
+            <div class="login-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_167_647)">
+                    <path d="M6.9997 14.0897C6.42587 14.0897 5.93412 13.8849 5.52445 13.4752C5.11479 13.0655 4.90995 12.5738 4.90995 11.9999C4.90995 11.4261 5.11479 10.9344 5.52445 10.5247C5.93412 10.115 6.42587 9.9102 6.9997 9.9102C7.57354 9.9102 8.06529 10.115 8.47495 10.5247C8.88462 10.9344 9.08945 11.4261 9.08945 11.9999C9.08945 12.5738 8.88462 13.0655 8.47495 13.4752C8.06529 13.8849 7.57354 14.0897 6.9997 14.0897ZM6.9997 18.1852C5.2852 18.1852 3.8257 17.5829 2.6212 16.3784C1.4167 15.1739 0.814453 13.7144 0.814453 11.9999C0.814453 10.2854 1.4167 8.82595 2.6212 7.62145C3.8257 6.41695 5.2852 5.8147 6.9997 5.8147C8.1602 5.8147 9.20954 6.10161 10.1477 6.67545C11.086 7.24945 11.8219 7.99436 12.3552 8.9102H21.1252L24.221 11.9999L19.5955 16.6254L17.5895 15.1134L15.5955 16.6074L13.4405 15.0897H12.3552C11.8259 16.0015 11.091 16.7454 10.1507 17.3214C9.21054 17.8973 8.1602 18.1852 6.9997 18.1852ZM6.9997 15.9999C7.94904 15.9999 8.77987 15.7106 9.4922 15.1319C10.2044 14.5534 10.6712 13.8129 10.8927 12.9102H14.1192L15.5395 13.9114L17.5895 12.3864L19.3585 13.7494L21.1377 12.0239L20.2095 11.0897H10.8867C10.6772 10.199 10.2134 9.46145 9.4952 8.87695C8.77687 8.29228 7.94504 7.99995 6.9997 7.99995C5.8997 7.99995 4.95804 8.39161 4.1747 9.17495C3.39137 9.95828 2.9997 10.8999 2.9997 11.9999C2.9997 13.0999 3.39137 14.0416 4.1747 14.8249C4.95804 15.6083 5.8997 15.9999 6.9997 15.9999Z" fill="#AA89F8"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_167_647">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+        <div class="menu d-none">
+            <div class="menu-content">
+                <div class="menu-close__btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#3A2360"/>
+                    </svg>
+                </div>
+                <div class="header-btns">
+                    <button type="button" class="create-account__btn btn">Создать аккаунт</button>
+                    <button type="button" class="sign-in__btn btn2">Войти</button>
+                </div>
+
+                <!-- profile & balance -->
+                <!-- <div class="user-profile d-flex align-center">
+                    <img src="assets/images/png/avatar.png" alt="" class="avatar">
+                    <div class="">
+                        <span class="user-name">Large_username_1230</span>
+                        <a href="mailto:username@domain.com" class="user-email">username@domain.com</a>
+                        <div class="sub-info d-flex align-center">
+                            <div class="status">LiftGPT PRO</div>
+                            <span class="data">до 01.01.2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-balance d-flex align-center justify-between">
+                    <div class="d-flex align-center">
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.275 18.4065C1.64533 18.4065 1.10875 18.1848 0.66525 17.7413C0.22175 17.2978 0 16.7612 0 16.1315V2.275C0 1.64533 0.22175 1.10875 0.66525 0.66525C1.10875 0.22175 1.64533 0 2.275 0H16.1315C16.7612 0 17.2978 0.22175 17.7413 0.66525C18.1848 1.10875 18.4065 1.64533 18.4065 2.275V4.70325H16.1315V2.275H2.275V16.1315H16.1315V13.7032H18.4065V16.1315C18.4065 16.7612 18.1848 17.2978 17.7413 17.7413C17.2978 18.1848 16.7612 18.4065 16.1315 18.4065H2.275ZM10.2153 14.2032C9.66192 14.2032 9.18825 14.0084 8.79425 13.6188C8.40025 13.2291 8.20325 12.7572 8.20325 12.2032V6.21525C8.20325 5.66192 8.40025 5.18825 8.79425 4.79425C9.18825 4.40025 9.66192 4.20325 10.2153 4.20325H17.4005C17.9545 4.20325 18.4273 4.40025 18.819 4.79425C19.2107 5.18825 19.4065 5.66192 19.4065 6.21525V12.2063C19.4065 12.7554 19.2107 13.2256 18.819 13.6168C18.4273 14.0078 17.9545 14.2032 17.4005 14.2032H10.2153ZM17.4125 12.2032V6.20325H10.2032V12.2032H17.4125ZM13.2032 10.7032C13.6199 10.7032 13.9741 10.5574 14.2657 10.2657C14.5574 9.97408 14.7032 9.61992 14.7032 9.20325C14.7032 8.78658 14.5574 8.43242 14.2657 8.14075C13.9741 7.84908 13.6199 7.70325 13.2032 7.70325C12.7866 7.70325 12.4324 7.84908 12.1407 8.14075C11.8491 8.43242 11.7032 8.78658 11.7032 9.20325C11.7032 9.61992 11.8491 9.97408 12.1407 10.2657C12.4324 10.5574 12.7866 10.7032 13.2032 10.7032Z" fill="#AA89F8"/>
+                        </svg>
+                        <div class="balance d-flex align-center">
+                            <strong>1 690</strong> <span>₽</span>
+                        </div>
+                    </div>
+                    <button type="button" class="topUp-balance__btn btn">Пополнить</button>
+                </div> -->
+
+                <nav class="nav">
+                    <ul class="nav-list d-flex flex-column">
+                        <li class="active"><a href="#">Продукт</a></li>
+                        <li><a href="#tariff">Тарифы</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">SMM Lift</a></li>
+                        <!-- <li class="logOut__btn"><span>Выйти</span></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+            <div class="">
+                <picture class="wrapper-bg">
+                    <source srcset="assets/images/webp/wrapper.webp" type="image/webp">
+                    <source srcset="assets/images/png/wrapper.png" type="image/png"> 
+                    <img src="assets/images/png/wrapper.png" alt="picture">
+                  </picture>
+                  <picture class="wrapper-bg">
+                      <source srcset="assets/images/webp/wrapper-mob.webp" type="image/webp">
+                      <source srcset="assets/images/png/wrapper-mob.png" type="image/png"> 
+                      <img src="assets/images/png/wrapper-mob.png"  alt="picture">
+                    </picture>
+            </div>
+            <div class="container">
+                <div class="wrapper-info">
+                    <h1 class="title-text">LiftGPT -</h1>
+                    <p class="title-subtext"><span>уникальный</span> комплексный  инструмент, <br> включающий все нейросети</p>
+                </div>
+            </div>
+
+            <div class="wrapper-slider">
+                <div class="top-slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="wrapper-item text-center">
+                                    <div class="">
+                                        <h2 class="item-title">LiftGPT <span>PRO</span></h2>
+                                        <p class="item-subtitle">профессиональный уровень точности</p>
+                                        <p class="item-text">Pro создан как универсальный мощный инструмент для тех, <br>
+                                            кому важно качество и надёжность. </p>
+                                        <div class="info-text">
+                                            <p class="item-text bold">Pro не просто отвечает — она сравнивает свой результат с другими версиями ИИ (Claude, DeepSeek, Gemini), выбирая лучший вариант. 
+                                                Это даёт высокую точность, глубокий анализ, премиальные тексты 
+                                                и почти полное отсутствие ошибок, предлагаю лучшее решение на рынке.</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <a href="#" class="more-details d-flex align-center">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="#AA89F8"/>
+                                            </svg>      
+                                            <span>Подробнее</span>                                      
+                                        </a>
+                                        <form class="item-form d-flex align-center justify-between">
+                                            <div class="input-box">
+                                                <input type="email" name="email" class="form-inp" placeholder="Укажите ваш email" required>
+                                            </div>
+                                            <button type="submit" class="form__btn btn">Попробовать бесплатно</button>
+                                        </form>
+                                        <button type="button" class="more__btn btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrapper-item text-center">
+                                    <div class="">
+                                        <h2 class="item-title">LiftGPT Multi</h2>
+                                        <p class="item-subtitle">доступ ко всем топовым ИИ</p>
+                                        <p class="item-text">LIFT GPT Multi — это сервис, который открывает доступ сразу к нескольким лучшим ИИ на рынке. Пользователь сам выбирает модель. <br> Каждая из них доступна в чистом виде, 
+                                            без ограничений и фильтров.</p>
+                                            <div class="info-text">
+                                                <p class="item-text bold">Максимальный контроль: сравнение моделей, выбор оптимального стиля,  разные ИИ под разные задачи (GPT, Claude 3.5, Gemini 2.5, DeepSeek и другие) 
+                                                    и лучший результат в любой ситуации.</p>
+                                            </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <a href="#" class="more-details d-flex align-center">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="#AA89F8"/>
+                                            </svg>      
+                                            <span>Подробнее</span>                                      
+                                        </a>
+                                        <form class="item-form d-flex align-center justify-between">
+                                            <div class="input-box">
+                                                <input type="email" name="email" class="form-inp" placeholder="Укажите ваш email" required>
+                                            </div>
+                                            <button type="submit" class="form__btn btn">Попробовать бесплатно</button>
+                                        </form>
+                                        <button type="button" class="more__btn btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrapper-item text-center">
+                                    <div class="">
+                                        <h2 class="item-title">LiftGPT Base</h2>
+                                        <p class="item-subtitle">ИИ для ежедневных задач</p>
+                                        <p class="item-text">Инструмент на основе Gemini, 
+                                            доработанный и дополнительно обученный командой SMM Lift для лучшего выполнения 
+                                            всех повседневных задач</p>
+                                            <div class="info-text">
+                                                <p class="item-text">  Она лучше понимает формулировки, точнее отвечает на бытовые и рабочие вопросы и выдаёт структурированные, аккуратные решения. <br>
+                                                    В ней собраны улучшения из разных ИИ-направлений: логика, математика, код, стиль текста и понимание контекста.</p>
+                                                <p class="item-text bold">Base — это быстрый, лёгкий в общении помощник на каждый день, <br>
+                                                    но заметно умнее и аккуратнее стандартных моделей.</p>
+                                                <ul class="item-list">
+                                                    <li>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="#AA89F8"/>
+                                                        </svg>
+                                                        <div class="">
+                                                            <strong>Улучшенное понимание запросов: </strong>
+                                                            <p>модель точнее улавливает смысл и выдаёт более подходящие ответы.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="#AA89F8"/>
+                                                        </svg>
+                                                        <div class="">
+                                                            <strong>Отлично подходит для повседневных задач: </strong>
+                                                            <p>тексты, объяснения, советы, идеи, генерации изображений.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="#AA89F8"/>
+                                                        </svg>
+                                                        <div class="">
+                                                            <strong>Максимально доступная цена при стабильном качестве:</strong>
+                                                            <p>Широкий спектр инструментов по привлекательной цене</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <a href="#" class="more-details d-flex align-center">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="#AA89F8"/>
+                                            </svg>      
+                                            <span>Подробнее</span>                                      
+                                        </a>
+                                        <form class="item-form d-flex align-center justify-between">
+                                            <div class="input-box">
+                                                <input type="email" name="email" class="form-inp" placeholder="Укажите ваш email" required>
+                                            </div>
+                                            <button type="submit" class="form__btn btn">Попробовать бесплатно</button>
+                                        </form>
+                                        <button type="button" class="more__btn btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-btns">
+                        <div class="swiper-prev prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.705 7.41L14.295 6L8.29504 12L14.295 18L15.705 16.59L11.125 12L15.705 7.41Z" fill="#7837DF"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-next next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.70492 6L8.29492 7.41L12.8749 12L8.29492 16.59L9.70492 18L15.7049 12L9.70492 6Z" fill="#7837DF"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="big-slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="wrapper-box">
+                                    <div class="box-left">
+                                        <div class="left-info">
+                                            <h2 class="left-title">Что умеет <span>LiftGPT PRO</span></h2>
+                                            <p class="left-text">PRO понимает контекст глубже, строит более сложную логику, аккуратно работает с большими запросами 
+                                                и документами.</p>
+                                            <p class="left-text">Может создавать изображения, видео, презентации, работать с файлами, анализировать большие документы и выдавать структурированные материалы 
+                                                для реальной работы</p>
+                                            <p class="left-text">Внедренные командой SMM LIFT улучшения позволяют модели «думать шире»: анализировать варианты решения, выявлять ошибки и предлагать оптимальный результат.</p>
+                                            <p class="left-text bold">Это универсальный инструмент, который можно использовать для любых вопросов и задач, связанных не только с социальными сетями и маркетингом.</p>
+                                        </div>
+                                        <img src="assets/images/png/LiftGPT.png" alt="" class="left-img">
+                                    </div>
+                                    <div class="box-right">
+                                        <div class="right-item text-center">
+                                            <h3 class="right-title">Максимальная точность 
+                                                и уверенность в ответе</h3>
+                                            <p class="right-text">Pro использует  <br>
+                                                продвинутые механизмы анализа —  <br>
+                                                модель пересматривает свои шаги,  <br>
+                                                замечает возможные ошибки и формирует более точные, глубокие и аккуратные ответы.</p>
+                                            <p class="right-text bold">Это даёт стабильное качество <br>
+                                                при сложных задачах.</p>
+                                        </div>
+                                        <div class="right-item text-center">
+                                            <h3 class="right-title">Сильный инструмент <br>
+                                                для работы: документы, <br>
+                                                файлы, структура, большие запросы</h3>
+                                            <p class="right-text">Pro уверенно работает с длинными текстами, файлами, таблицами, презентациями <br>
+                                                и сложными документами. 
+                                                Понимает контекст «вглубь» и аккуратно выдаёт структурированный, рабочий результат.</p>
+                                        </div>
+                                        <div class="right-item text-center">
+                                            <img src="assets/images/png/Illustration.png" alt="" class="left-img">
+                                            <div class="">
+                                                <h3 class="right-title">Топовые креативные <br>
+                                                    и мультимедийные возможности</h3>
+                                                <p class="right-text">Генерация изображений высокого качества, видео, оформление материалов, создание презентаций — Pro закрывает задачи, которые обычные модели не тянут, и экономит рабочее время.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <form class="middle-form d-flex align-center justify-between">
+                                    <div class="input-box">
+                                        <input type="email" name="email" class="form-inp" placeholder="Укажите ваш email" required>
+                                    </div>
+                                    <button type="submit" class="form__btn btn">Попробовать бесплатно</button>
+                                </form>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrapper-box">
+                                    <div class="box-left">
+                                        <div class="left-info">
+                                            <h2 class="left-title">Что умеет <span>LiftGPT Multi</span></h2>
+                                            <p class="left-text">LIFT GPT Multi — это сервис, который открывает доступ сразу к нескольким лучшим ИИ на рынке. Пользователь сам выбирает модель: GPT, Claude 3.5, Gemini 2.5, DeepSeek и другие. Каждая из них доступна 
+                                                в чистом виде, без ограничений и фильтров.</p>
+                                            <p class="left-text bold">Multi идеально подходит тем, кто хочет иметь максимальный контроль: сравнивать модели, выбирать оптимальный стиль, использовать разные ИИ под разные задачи и получать лучший результат <br>
+                                                в любой ситуации.</p>
+                                        </div>
+                                        <img src="assets/images/png/LiftGPT.png" alt="" class="left-img">
+                                    </div>
+                                    <div class="box-right">
+                                        <div class="right-item text-center">
+                                            <h3 class="right-title">Все ведущие ИИ в одном месте</h3>
+                                            <p class="right-text">GPT, Claude, Gemini, DeepSeek и другие — 
+                                                по выбору пользователя.</p>
+                                        </div>
+                                        <div class="right-item text-center">
+                                            <h3 class="right-title">Чистые версии моделей</h3>
+                                            <p class="right-text">без модификаций, именно в том виде, в котором они существуют у разработчиков.</p>
+                                        </div>
+                                        <div class="right-item text-center">
+                                            <img src="assets/images/png/Illustration3.png" alt="" class="left-img">
+                                            <div class="">
+                                                <h3 class="right-title">Максимальная гибкость</h3>
+                                                <p class="right-text">можно переключаться между моделями и использовать каждую под конкретный тип задач.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <form class="middle-form d-flex align-center justify-between">
+                                    <div class="input-box">
+                                        <input type="email" name="email" class="form-inp" placeholder="Укажите ваш email" required>
+                                    </div>
+                                    <button type="submit" class="form__btn btn">Попробовать бесплатно</button>
+                                </form>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrapper-box">
+                                    <div class="box-left">
+                                        <div class="left-info">
+                                            <h2 class="left-title">Что умеет <span>LiftGPT Base</span></h2>
+                                            <p class="left-text">LIFT GPT Base лучше понимает формулировки, точнее отвечает на бытовые и рабочие вопросы и выдаёт структурированные, аккуратные решения.</p>
+                                            <p class="left-text bold">Base — это быстрый, лёгкий в общении помощник 
+                                                на каждый день, но заметно умнее и аккуратнее стандартных моделей.</p>
+                                        </div>
+                                        <img src="assets/images/png/LiftGPT.png" alt="" class="left-img">
+                                    </div>
+                                    <div class="box-right">
+                                        <div class="right-item text-center">
+                                            <h3 class="right-title">Улучшенное понимание запросов</h3>
+                                            <p class="right-text">Модель точнее улавливает смысл и выдаёт более подходящие ответы.</p>
+                                        </div>
+                                        <div class="right-item text-center">
+                                            <h3 class="right-title">Отлично подходит для повседневных задач</h3>
+                                            <p class="right-text">Тексты, объяснения, советы, идеи, генерации изображений.</p>
+                                        </div>
+                                        <div class="right-item text-center">
+                                            <img src="assets/images/png/Illustration2.png" alt="" class="left-img">
+                                            <div class="">
+                                                <h3 class="right-title">Максимально доступная цена <br>
+                                                    при стабильном качестве</h3>
+                                                <p class="right-text">Широкий спектр инструментов для повседневных задач <br>
+                                                    на выгодных условиях</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <form class="middle-form d-flex align-center justify-between">
+                                    <div class="input-box">
+                                        <input type="email" name="email" class="form-inp" placeholder="Укажите ваш email" required>
+                                    </div>
+                                    <button type="submit" class="form__btn btn">Попробовать бесплатно</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tools">
+            <div class="container">
+                <h2 class="title-text text-center">
+                    <span>ИИ-инструменты и функционал</span>
+                    Расширенные возможности под лютые задачи
+                </h2>
+                <div class="tools-box d-flex justify-between flex-wrap">
+                    <div class="tool d-flex align-center flex-column justify-center">
+                        <img src="assets/images/svg/i1.svg" alt="" class="tool-icon">
+                        <h3 class="tool-title">Ассистенты</h3>
+                        <p class="tool-text">Создай личного ИИ-ассистента, <br>
+                            который работает именно так, как тебе нужно</p>
+                            <img src="assets/images/png/line1.png" alt="" class="line">
+                    </div>
+                    <div class="tool d-flex align-center flex-column justify-center">
+                        <img src="assets/images/svg/i2.svg" alt="" class="tool-icon">
+                        <h3 class="tool-title">Режим Hands Free</h3>
+                        <p class="tool-text">Режим превращает чат в живой разговор: <br>
+                            просто скажи - и получи ответ вслух</p>
+                            <img src="assets/images/png/line2.png" alt="" class="line">
+                    </div>
+                    <div class="tool d-flex align-center flex-column justify-center">
+                        <img src="assets/images/svg/i3.svg" alt="" class="tool-icon">
+                        <h3 class="tool-title">Работа с изображениями</h3>
+                        <p class="tool-text">Удаляй фон, распознавай текст на фото <br>
+                            и увеличивай размер изображений</p>
+                    </div>
+                    <div class="tool d-flex align-center flex-column justify-center">
+                        <img src="assets/images/svg/i4.svg" alt="" class="tool-icon">
+                        <h3 class="tool-title">Веб-поиск</h3>
+                        <p class="tool-text">Чат ищет данные в интернете <br>
+                            и выдаёт актуальную информацию</p>
+                            <img src="assets/images/png/line3.png" alt="" class="line">
+                    </div>
+                    <div class="tool d-flex align-center flex-column justify-center">
+                        <img src="assets/images/svg/i5.svg" alt="" class="tool-icon">
+                        <h3 class="tool-title">Шаблоны</h3>
+                        <p class="tool-text">Библиотека промптов к нейросетям с качественными ответами. <br>
+                            Можно добавлять свои</p>
+                            <img src="assets/images/png/line4.png" alt="" class="line">
+                    </div>
+                    <div class="tool d-flex align-center flex-column justify-center">
+                        <img src="assets/images/svg/i6.svg" alt="" class="tool-icon">
+                        <h3 class="tool-title">Память</h3>
+                        <p class="tool-text">Чат сохраняет детали сессий <br>
+                            для более эффективных взаимодействий</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tariff" class="tariffs">
+            <div class="">
+                <img src="assets/images/png/tariff-bg.png" alt="" class="tariffs-bg">
+                <img src="assets/images/png/tariff-bg_mob.png" alt="" class="tariffs-bg">
+            </div>
+            <div class="container">
+                <h2 class="title-text text-center">
+                    <span>Тарифы</span>
+                    Выбери свой - самое нужное на лучших условиях
+                </h2>
+                <div class="tariffs-box">
+                    <div class="tariff">
+                        <div class="tariff-top">
+                            <h3 class="tariff-title">Мини</h3>
+                            <div class="info-text"><strong>120 000</strong> слов на месяц</div>
+                            <div class="info-text"><p><span>2.41</span> ₽ за <span>1 000</span> слов</p></div>
+                            <div class="sale d-none">
+                                <span class="sale-text">-19%</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00025 14.8021C7.72003 14.8021 7.45175 14.7494 7.19542 14.6441C6.93898 14.5388 6.71103 14.3877 6.51159 14.1909C6.19725 13.8766 5.92542 13.6708 5.69609 13.5734C5.46675 13.4761 5.12675 13.4274 4.67609 13.4274C4.09164 13.4274 3.59492 13.2229 3.18592 12.8139C2.77692 12.4049 2.57242 11.9082 2.57242 11.3238C2.57242 10.869 2.5237 10.5279 2.42625 10.3004C2.32881 10.0731 2.12303 9.80236 1.80892 9.48825C1.60948 9.28881 1.45775 9.06081 1.35375 8.80425C1.24975 8.5477 1.19775 8.27953 1.19775 7.99975C1.19775 7.71986 1.25042 7.45175 1.35575 7.19542C1.46109 6.93898 1.61214 6.71231 1.80892 6.51542C2.12325 6.2012 2.32909 5.92942 2.42642 5.70009C2.52375 5.47075 2.57242 5.12942 2.57242 4.67609C2.57242 4.09275 2.77692 3.59698 3.18592 3.18875C3.59492 2.78053 4.09164 2.57642 4.67609 2.57642C5.12675 2.57642 5.46675 2.52775 5.69609 2.43042C5.92542 2.33309 6.19725 2.12725 6.51159 1.81292C6.70836 1.61614 6.93536 1.46442 7.19259 1.35775C7.4497 1.25109 7.71853 1.19775 7.99909 1.19775C8.27964 1.19775 8.54809 1.25109 8.80442 1.35775C9.06086 1.46442 9.28753 1.61614 9.48442 1.81292C9.79864 2.12725 10.0704 2.33309 10.2998 2.43042C10.5291 2.52775 10.8704 2.57642 11.3238 2.57642C11.9071 2.57642 12.4029 2.78053 12.8111 3.18875C13.2193 3.59698 13.4234 4.09275 13.4234 4.67609C13.4234 5.12675 13.4721 5.46742 13.5694 5.69809C13.6668 5.92875 13.8726 6.2012 14.1869 6.51542C14.3837 6.71231 14.5354 6.93903 14.6421 7.19559C14.7488 7.45214 14.8021 7.72031 14.8021 8.00009C14.8021 8.27998 14.7494 8.54836 14.6439 8.80525C14.5385 9.06214 14.3861 9.28981 14.1869 9.48825C13.8729 9.80292 13.6671 10.0742 13.5696 10.3021C13.4721 10.5299 13.4234 10.8704 13.4234 11.3238C13.4234 11.9082 13.2193 12.4049 12.8111 12.8139C12.4029 13.2229 11.9071 13.4274 11.3238 13.4274C10.8691 13.4274 10.5281 13.4754 10.3008 13.5714C10.0734 13.6674 9.80259 13.8726 9.48825 14.1869C9.28992 14.3861 9.06237 14.5385 8.80559 14.6439C8.54881 14.7494 8.28036 14.8021 8.00025 14.8021ZM7.99942 13.2894C8.07798 13.2894 8.15364 13.2726 8.22642 13.2391C8.29909 13.2055 8.36053 13.1636 8.41075 13.1133C8.87964 12.6471 9.31936 12.3309 9.72992 12.1644C10.1406 11.998 10.6732 11.9148 11.3278 11.9148C11.4941 11.9148 11.6335 11.8585 11.7461 11.7461C11.8585 11.6335 11.9148 11.4941 11.9148 11.3278C11.9148 10.6643 11.9975 10.1295 12.1631 9.72342C12.3285 9.31731 12.6453 8.87975 13.1133 8.41075C13.2307 8.29342 13.2894 8.15648 13.2894 7.99992C13.2894 7.84336 13.2307 7.70642 13.1133 7.58909C12.6471 7.12286 12.3309 6.68381 12.1644 6.27192C11.998 5.86014 11.9148 5.3282 11.9148 4.67609C11.9148 4.50975 11.8585 4.37031 11.7461 4.25775C11.6335 4.14531 11.4941 4.08909 11.3278 4.08909C10.6674 4.08909 10.1327 4.00586 9.72359 3.83942C9.31459 3.67298 8.87698 3.35664 8.41075 2.89042C8.36053 2.8402 8.29975 2.79831 8.22842 2.76475C8.15698 2.7312 8.08081 2.71442 7.99992 2.71442C7.91903 2.71442 7.84236 2.73114 7.76992 2.76459C7.69759 2.79803 7.63731 2.8387 7.58909 2.88659C7.11753 3.35537 6.6762 3.67298 6.26509 3.83942C5.85398 4.00586 5.32298 4.08909 4.67209 4.08909C4.50575 4.08909 4.36631 4.14531 4.25375 4.25775C4.14131 4.37031 4.08509 4.50975 4.08509 4.67609C4.08509 5.33964 4.00186 5.87448 3.83542 6.28059C3.66898 6.6867 3.3527 7.12286 2.88659 7.58909C2.76914 7.70642 2.71042 7.84336 2.71042 7.99992C2.71042 8.15648 2.76914 8.29342 2.88659 8.41075C3.3527 8.87698 3.66898 9.31636 3.83542 9.72892C4.00186 10.1416 4.08509 10.6745 4.08509 11.3278C4.08509 11.4941 4.14131 11.6335 4.25375 11.7461C4.36631 11.8585 4.50575 11.9148 4.67209 11.9148C5.33564 11.9148 5.87048 11.998 6.27659 12.1644C6.6827 12.3309 7.11886 12.6471 7.58509 13.1133C7.63531 13.1636 7.69725 13.2055 7.77092 13.2391C7.84459 13.2726 7.92075 13.2894 7.99942 13.2894ZM9.69042 10.7423C9.98264 10.7423 10.231 10.6396 10.4356 10.4343C10.64 10.2288 10.7423 9.97942 10.7423 9.68609C10.7423 9.39264 10.6399 9.14336 10.4351 8.93825C10.2302 8.73325 9.98148 8.63075 9.68892 8.63075C9.39625 8.63075 9.14736 8.73342 8.94225 8.93875C8.73725 9.1442 8.63475 9.39359 8.63475 9.68692C8.63475 9.98036 8.73736 10.2296 8.94259 10.4348C9.14792 10.6398 9.3972 10.7423 9.69042 10.7423ZM6.27992 10.7249L10.7289 6.27992L9.71992 5.27092L5.27492 9.71992L6.27992 10.7249ZM6.31375 7.36509C6.6072 7.36509 6.85648 7.26248 7.06159 7.05725C7.26659 6.85192 7.36909 6.60264 7.36909 6.30942C7.36909 6.0172 7.26642 5.76881 7.06109 5.56425C6.85564 5.35981 6.60625 5.25759 6.31292 5.25759C6.01948 5.25759 5.7702 5.35998 5.56509 5.56475C5.36009 5.76964 5.25759 6.01836 5.25759 6.31092C5.25759 6.60359 5.36025 6.85248 5.56559 7.05759C5.77103 7.26259 6.02042 7.36509 6.31375 7.36509Z" fill="#AA89F8" fill-opacity="0.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price-info">
+                                <span>290</span>₽
+                            </div> 
+                            <span class="month">/ <span>месяц</span></span> 
+                        </div>
+                        <ul class="info-list">
+                            <li>
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.24717 12.259H1.51667C1.09689 12.259 0.739166 12.1112 0.4435 11.8155C0.147833 11.5199 0 11.1622 0 10.7423V6.1355C0 5.28628 0.161667 4.48911 0.485 3.744C0.808333 2.999 1.24606 2.35039 1.79817 1.79817C2.35039 1.24606 2.999 0.808333 3.744 0.485C4.48911 0.161666 5.28628 0 6.1355 0C6.98472 0 7.78189 0.161666 8.527 0.485C9.272 0.808333 9.92061 1.24606 10.4728 1.79817C11.0249 2.35039 11.4627 2.999 11.786 3.744C12.1093 4.48911 12.271 5.28628 12.271 6.1355V10.7423C12.271 11.1622 12.1232 11.5199 11.8275 11.8155C11.5318 12.1112 11.1741 12.259 10.7543 12.259H8.02383V6.67867H10.7543V6.1355C10.7543 4.84883 10.3062 3.75733 9.40983 2.861C8.51361 1.96478 7.42217 1.51667 6.1355 1.51667C4.84883 1.51667 3.75733 1.96478 2.861 2.861C1.96478 3.75733 1.51667 4.84883 1.51667 6.1355V6.67867H4.24717V12.259ZM2.7305 8.19533H1.51667V10.7423H2.7305V8.19533ZM9.5405 8.19533V10.7423H10.7543V8.19533H9.5405Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>8 - 20 аудио</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.71454 13.4689C2.29476 13.4689 1.93704 13.3211 1.64138 13.0254C1.34571 12.7298 1.19788 12.372 1.19788 11.9523V4.04792C1.19788 3.62814 1.34571 3.27042 1.64138 2.97475C1.93704 2.67908 2.29476 2.53125 2.71454 2.53125H10.6189C11.0387 2.53125 11.3964 2.67908 11.692 2.97475C11.9877 3.27042 12.1355 3.62814 12.1355 4.04792V7.00008L14.8022 4.33342V11.6668L12.1355 9.00008V11.9523C12.1355 12.372 11.9877 12.7298 11.692 13.0254C11.3964 13.3211 11.0387 13.4689 10.6189 13.4689H2.71454ZM2.71454 11.9523H10.6189V4.04792H2.71454V11.9523Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>1 - 6 видео</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.04788 10.6189H11.9522V5.38125H4.04788V10.6189ZM2.71454 13.4689C2.29476 13.4689 1.93704 13.3211 1.64138 13.0254C1.34571 12.7298 1.19788 12.372 1.19788 11.9523V4.04792C1.19788 3.62814 1.34571 3.27042 1.64138 2.97475C1.93704 2.67908 2.29476 2.53125 2.71454 2.53125H13.2855C13.7053 2.53125 14.063 2.67908 14.3587 2.97475C14.6544 3.27042 14.8022 3.62814 14.8022 4.04792V11.9523C14.8022 12.372 14.6544 12.7298 14.3587 13.0254C14.063 13.3211 13.7053 13.4689 13.2855 13.4689H2.71454ZM2.71454 11.9523H13.2855V4.04792H2.71454V11.9523ZM5.23771 9.37725L6.70221 7.42225L7.65471 8.68675L8.95254 6.95625L10.7624 9.37725H5.23771Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>6 - 133 изображений</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.6905 11.3093H9.35717V9.97592H4.6905V11.3093ZM4.6905 8.66642H11.3095V7.33309H4.6905V8.66642ZM4.6905 6.02359H11.3095V4.69026H4.6905V6.02359ZM3.38117 14.1353C2.96139 14.1353 2.60367 13.9874 2.308 13.6918C2.01234 13.3961 1.8645 13.0384 1.8645 12.6186V3.38092C1.8645 2.96115 2.01234 2.60342 2.308 2.30776C2.60367 2.01209 2.96139 1.86426 3.38117 1.86426H12.6188C13.0386 1.86426 13.3963 2.01209 13.692 2.30776C13.9877 2.60342 14.1355 2.96115 14.1355 3.38092V12.6186C14.1355 13.0384 13.9877 13.3961 13.692 13.6918C13.3963 13.9874 13.0386 14.1353 12.6188 14.1353H3.38117ZM3.38117 12.6186H12.6188V3.38092H3.38117V12.6186Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>4 - 188 страниц текста</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="choose__btn btn2">Выбрать</button>
+                    </div>
+                    <div class="tariff">
+                        <div class="tariff-top">
+                            <h3 class="tariff-title">Опти</h3>
+                            <div class="info-text"><strong>300 000</strong> слов на месяц</div>
+                            <div class="info-text"><p><span>1.96</span> ₽ за <span>1 000</span> слов</p></div>
+                            <div class="sale">
+                                <span class="sale-text">-19%</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00025 14.8021C7.72003 14.8021 7.45175 14.7494 7.19542 14.6441C6.93898 14.5388 6.71103 14.3877 6.51159 14.1909C6.19725 13.8766 5.92542 13.6708 5.69609 13.5734C5.46675 13.4761 5.12675 13.4274 4.67609 13.4274C4.09164 13.4274 3.59492 13.2229 3.18592 12.8139C2.77692 12.4049 2.57242 11.9082 2.57242 11.3238C2.57242 10.869 2.5237 10.5279 2.42625 10.3004C2.32881 10.0731 2.12303 9.80236 1.80892 9.48825C1.60948 9.28881 1.45775 9.06081 1.35375 8.80425C1.24975 8.5477 1.19775 8.27953 1.19775 7.99975C1.19775 7.71986 1.25042 7.45175 1.35575 7.19542C1.46109 6.93898 1.61214 6.71231 1.80892 6.51542C2.12325 6.2012 2.32909 5.92942 2.42642 5.70009C2.52375 5.47075 2.57242 5.12942 2.57242 4.67609C2.57242 4.09275 2.77692 3.59698 3.18592 3.18875C3.59492 2.78053 4.09164 2.57642 4.67609 2.57642C5.12675 2.57642 5.46675 2.52775 5.69609 2.43042C5.92542 2.33309 6.19725 2.12725 6.51159 1.81292C6.70836 1.61614 6.93536 1.46442 7.19259 1.35775C7.4497 1.25109 7.71853 1.19775 7.99909 1.19775C8.27964 1.19775 8.54809 1.25109 8.80442 1.35775C9.06086 1.46442 9.28753 1.61614 9.48442 1.81292C9.79864 2.12725 10.0704 2.33309 10.2998 2.43042C10.5291 2.52775 10.8704 2.57642 11.3238 2.57642C11.9071 2.57642 12.4029 2.78053 12.8111 3.18875C13.2193 3.59698 13.4234 4.09275 13.4234 4.67609C13.4234 5.12675 13.4721 5.46742 13.5694 5.69809C13.6668 5.92875 13.8726 6.2012 14.1869 6.51542C14.3837 6.71231 14.5354 6.93903 14.6421 7.19559C14.7488 7.45214 14.8021 7.72031 14.8021 8.00009C14.8021 8.27998 14.7494 8.54836 14.6439 8.80525C14.5385 9.06214 14.3861 9.28981 14.1869 9.48825C13.8729 9.80292 13.6671 10.0742 13.5696 10.3021C13.4721 10.5299 13.4234 10.8704 13.4234 11.3238C13.4234 11.9082 13.2193 12.4049 12.8111 12.8139C12.4029 13.2229 11.9071 13.4274 11.3238 13.4274C10.8691 13.4274 10.5281 13.4754 10.3008 13.5714C10.0734 13.6674 9.80259 13.8726 9.48825 14.1869C9.28992 14.3861 9.06237 14.5385 8.80559 14.6439C8.54881 14.7494 8.28036 14.8021 8.00025 14.8021ZM7.99942 13.2894C8.07798 13.2894 8.15364 13.2726 8.22642 13.2391C8.29909 13.2055 8.36053 13.1636 8.41075 13.1133C8.87964 12.6471 9.31936 12.3309 9.72992 12.1644C10.1406 11.998 10.6732 11.9148 11.3278 11.9148C11.4941 11.9148 11.6335 11.8585 11.7461 11.7461C11.8585 11.6335 11.9148 11.4941 11.9148 11.3278C11.9148 10.6643 11.9975 10.1295 12.1631 9.72342C12.3285 9.31731 12.6453 8.87975 13.1133 8.41075C13.2307 8.29342 13.2894 8.15648 13.2894 7.99992C13.2894 7.84336 13.2307 7.70642 13.1133 7.58909C12.6471 7.12286 12.3309 6.68381 12.1644 6.27192C11.998 5.86014 11.9148 5.3282 11.9148 4.67609C11.9148 4.50975 11.8585 4.37031 11.7461 4.25775C11.6335 4.14531 11.4941 4.08909 11.3278 4.08909C10.6674 4.08909 10.1327 4.00586 9.72359 3.83942C9.31459 3.67298 8.87698 3.35664 8.41075 2.89042C8.36053 2.8402 8.29975 2.79831 8.22842 2.76475C8.15698 2.7312 8.08081 2.71442 7.99992 2.71442C7.91903 2.71442 7.84236 2.73114 7.76992 2.76459C7.69759 2.79803 7.63731 2.8387 7.58909 2.88659C7.11753 3.35537 6.6762 3.67298 6.26509 3.83942C5.85398 4.00586 5.32298 4.08909 4.67209 4.08909C4.50575 4.08909 4.36631 4.14531 4.25375 4.25775C4.14131 4.37031 4.08509 4.50975 4.08509 4.67609C4.08509 5.33964 4.00186 5.87448 3.83542 6.28059C3.66898 6.6867 3.3527 7.12286 2.88659 7.58909C2.76914 7.70642 2.71042 7.84336 2.71042 7.99992C2.71042 8.15648 2.76914 8.29342 2.88659 8.41075C3.3527 8.87698 3.66898 9.31636 3.83542 9.72892C4.00186 10.1416 4.08509 10.6745 4.08509 11.3278C4.08509 11.4941 4.14131 11.6335 4.25375 11.7461C4.36631 11.8585 4.50575 11.9148 4.67209 11.9148C5.33564 11.9148 5.87048 11.998 6.27659 12.1644C6.6827 12.3309 7.11886 12.6471 7.58509 13.1133C7.63531 13.1636 7.69725 13.2055 7.77092 13.2391C7.84459 13.2726 7.92075 13.2894 7.99942 13.2894ZM9.69042 10.7423C9.98264 10.7423 10.231 10.6396 10.4356 10.4343C10.64 10.2288 10.7423 9.97942 10.7423 9.68609C10.7423 9.39264 10.6399 9.14336 10.4351 8.93825C10.2302 8.73325 9.98148 8.63075 9.68892 8.63075C9.39625 8.63075 9.14736 8.73342 8.94225 8.93875C8.73725 9.1442 8.63475 9.39359 8.63475 9.68692C8.63475 9.98036 8.73736 10.2296 8.94259 10.4348C9.14792 10.6398 9.3972 10.7423 9.69042 10.7423ZM6.27992 10.7249L10.7289 6.27992L9.71992 5.27092L5.27492 9.71992L6.27992 10.7249ZM6.31375 7.36509C6.6072 7.36509 6.85648 7.26248 7.06159 7.05725C7.26659 6.85192 7.36909 6.60264 7.36909 6.30942C7.36909 6.0172 7.26642 5.76881 7.06109 5.56425C6.85564 5.35981 6.60625 5.25759 6.31292 5.25759C6.01948 5.25759 5.7702 5.35998 5.56509 5.56475C5.36009 5.76964 5.25759 6.01836 5.25759 6.31092C5.25759 6.60359 5.36025 6.85248 5.56559 7.05759C5.77103 7.26259 6.02042 7.36509 6.31375 7.36509Z" fill="#AA89F8" fill-opacity="0.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price-info">
+                                <span>590</span>₽
+                            </div> 
+                            <span class="month">/ <span>месяц</span></span> 
+                        </div>
+                        <ul class="info-list">
+                            <li>
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.24717 12.259H1.51667C1.09689 12.259 0.739166 12.1112 0.4435 11.8155C0.147833 11.5199 0 11.1622 0 10.7423V6.1355C0 5.28628 0.161667 4.48911 0.485 3.744C0.808333 2.999 1.24606 2.35039 1.79817 1.79817C2.35039 1.24606 2.999 0.808333 3.744 0.485C4.48911 0.161666 5.28628 0 6.1355 0C6.98472 0 7.78189 0.161666 8.527 0.485C9.272 0.808333 9.92061 1.24606 10.4728 1.79817C11.0249 2.35039 11.4627 2.999 11.786 3.744C12.1093 4.48911 12.271 5.28628 12.271 6.1355V10.7423C12.271 11.1622 12.1232 11.5199 11.8275 11.8155C11.5318 12.1112 11.1741 12.259 10.7543 12.259H8.02383V6.67867H10.7543V6.1355C10.7543 4.84883 10.3062 3.75733 9.40983 2.861C8.51361 1.96478 7.42217 1.51667 6.1355 1.51667C4.84883 1.51667 3.75733 1.96478 2.861 2.861C1.96478 3.75733 1.51667 4.84883 1.51667 6.1355V6.67867H4.24717V12.259ZM2.7305 8.19533H1.51667V10.7423H2.7305V8.19533ZM9.5405 8.19533V10.7423H10.7543V8.19533H9.5405Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>10 - 28 аудио</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.71454 13.4689C2.29476 13.4689 1.93704 13.3211 1.64138 13.0254C1.34571 12.7298 1.19788 12.372 1.19788 11.9523V4.04792C1.19788 3.62814 1.34571 3.27042 1.64138 2.97475C1.93704 2.67908 2.29476 2.53125 2.71454 2.53125H10.6189C11.0387 2.53125 11.3964 2.67908 11.692 2.97475C11.9877 3.27042 12.1355 3.62814 12.1355 4.04792V7.00008L14.8022 4.33342V11.6668L12.1355 9.00008V11.9523C12.1355 12.372 11.9877 12.7298 11.692 13.0254C11.3964 13.3211 11.0387 13.4689 10.6189 13.4689H2.71454ZM2.71454 11.9523H10.6189V4.04792H2.71454V11.9523Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>3 - 15 видео</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.04788 10.6189H11.9522V5.38125H4.04788V10.6189ZM2.71454 13.4689C2.29476 13.4689 1.93704 13.3211 1.64138 13.0254C1.34571 12.7298 1.19788 12.372 1.19788 11.9523V4.04792C1.19788 3.62814 1.34571 3.27042 1.64138 2.97475C1.93704 2.67908 2.29476 2.53125 2.71454 2.53125H13.2855C13.7053 2.53125 14.063 2.67908 14.3587 2.97475C14.6544 3.27042 14.8022 3.62814 14.8022 4.04792V11.9523C14.8022 12.372 14.6544 12.7298 14.3587 13.0254C14.063 13.3211 13.7053 13.4689 13.2855 13.4689H2.71454ZM2.71454 11.9523H13.2855V4.04792H2.71454V11.9523ZM5.23771 9.37725L6.70221 7.42225L7.65471 8.68675L8.95254 6.95625L10.7624 9.37725H5.23771Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>15 - 333 изображений</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.6905 11.3093H9.35717V9.97592H4.6905V11.3093ZM4.6905 8.66642H11.3095V7.33309H4.6905V8.66642ZM4.6905 6.02359H11.3095V4.69026H4.6905V6.02359ZM3.38117 14.1353C2.96139 14.1353 2.60367 13.9874 2.308 13.6918C2.01234 13.3961 1.8645 13.0384 1.8645 12.6186V3.38092C1.8645 2.96115 2.01234 2.60342 2.308 2.30776C2.60367 2.01209 2.96139 1.86426 3.38117 1.86426H12.6188C13.0386 1.86426 13.3963 2.01209 13.692 2.30776C13.9877 2.60342 14.1355 2.96115 14.1355 3.38092V12.6186C14.1355 13.0384 13.9877 13.3961 13.692 13.6918C13.3963 13.9874 13.0386 14.1353 12.6188 14.1353H3.38117ZM3.38117 12.6186H12.6188V3.38092H3.38117V12.6186Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>11 - 472 страниц текста</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="choose__btn btn2">Выбрать</button>
+                    </div>
+                    <div class="tariff">
+                        <div class="tariff-top">
+                            <h3 class="tariff-title">Плюс</h3>
+                            <div class="info-text"><strong>900 000</strong> слов на месяц</div>
+                            <div class="info-text"><p><span>1.87</span> ₽ за <span>1 000</span> слов</p></div>
+                            <div class="sale">
+                                <span class="sale-text">-23%</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00025 14.8021C7.72003 14.8021 7.45175 14.7494 7.19542 14.6441C6.93898 14.5388 6.71103 14.3877 6.51159 14.1909C6.19725 13.8766 5.92542 13.6708 5.69609 13.5734C5.46675 13.4761 5.12675 13.4274 4.67609 13.4274C4.09164 13.4274 3.59492 13.2229 3.18592 12.8139C2.77692 12.4049 2.57242 11.9082 2.57242 11.3238C2.57242 10.869 2.5237 10.5279 2.42625 10.3004C2.32881 10.0731 2.12303 9.80236 1.80892 9.48825C1.60948 9.28881 1.45775 9.06081 1.35375 8.80425C1.24975 8.5477 1.19775 8.27953 1.19775 7.99975C1.19775 7.71986 1.25042 7.45175 1.35575 7.19542C1.46109 6.93898 1.61214 6.71231 1.80892 6.51542C2.12325 6.2012 2.32909 5.92942 2.42642 5.70009C2.52375 5.47075 2.57242 5.12942 2.57242 4.67609C2.57242 4.09275 2.77692 3.59698 3.18592 3.18875C3.59492 2.78053 4.09164 2.57642 4.67609 2.57642C5.12675 2.57642 5.46675 2.52775 5.69609 2.43042C5.92542 2.33309 6.19725 2.12725 6.51159 1.81292C6.70836 1.61614 6.93536 1.46442 7.19259 1.35775C7.4497 1.25109 7.71853 1.19775 7.99909 1.19775C8.27964 1.19775 8.54809 1.25109 8.80442 1.35775C9.06086 1.46442 9.28753 1.61614 9.48442 1.81292C9.79864 2.12725 10.0704 2.33309 10.2998 2.43042C10.5291 2.52775 10.8704 2.57642 11.3238 2.57642C11.9071 2.57642 12.4029 2.78053 12.8111 3.18875C13.2193 3.59698 13.4234 4.09275 13.4234 4.67609C13.4234 5.12675 13.4721 5.46742 13.5694 5.69809C13.6668 5.92875 13.8726 6.2012 14.1869 6.51542C14.3837 6.71231 14.5354 6.93903 14.6421 7.19559C14.7488 7.45214 14.8021 7.72031 14.8021 8.00009C14.8021 8.27998 14.7494 8.54836 14.6439 8.80525C14.5385 9.06214 14.3861 9.28981 14.1869 9.48825C13.8729 9.80292 13.6671 10.0742 13.5696 10.3021C13.4721 10.5299 13.4234 10.8704 13.4234 11.3238C13.4234 11.9082 13.2193 12.4049 12.8111 12.8139C12.4029 13.2229 11.9071 13.4274 11.3238 13.4274C10.8691 13.4274 10.5281 13.4754 10.3008 13.5714C10.0734 13.6674 9.80259 13.8726 9.48825 14.1869C9.28992 14.3861 9.06237 14.5385 8.80559 14.6439C8.54881 14.7494 8.28036 14.8021 8.00025 14.8021ZM7.99942 13.2894C8.07798 13.2894 8.15364 13.2726 8.22642 13.2391C8.29909 13.2055 8.36053 13.1636 8.41075 13.1133C8.87964 12.6471 9.31936 12.3309 9.72992 12.1644C10.1406 11.998 10.6732 11.9148 11.3278 11.9148C11.4941 11.9148 11.6335 11.8585 11.7461 11.7461C11.8585 11.6335 11.9148 11.4941 11.9148 11.3278C11.9148 10.6643 11.9975 10.1295 12.1631 9.72342C12.3285 9.31731 12.6453 8.87975 13.1133 8.41075C13.2307 8.29342 13.2894 8.15648 13.2894 7.99992C13.2894 7.84336 13.2307 7.70642 13.1133 7.58909C12.6471 7.12286 12.3309 6.68381 12.1644 6.27192C11.998 5.86014 11.9148 5.3282 11.9148 4.67609C11.9148 4.50975 11.8585 4.37031 11.7461 4.25775C11.6335 4.14531 11.4941 4.08909 11.3278 4.08909C10.6674 4.08909 10.1327 4.00586 9.72359 3.83942C9.31459 3.67298 8.87698 3.35664 8.41075 2.89042C8.36053 2.8402 8.29975 2.79831 8.22842 2.76475C8.15698 2.7312 8.08081 2.71442 7.99992 2.71442C7.91903 2.71442 7.84236 2.73114 7.76992 2.76459C7.69759 2.79803 7.63731 2.8387 7.58909 2.88659C7.11753 3.35537 6.6762 3.67298 6.26509 3.83942C5.85398 4.00586 5.32298 4.08909 4.67209 4.08909C4.50575 4.08909 4.36631 4.14531 4.25375 4.25775C4.14131 4.37031 4.08509 4.50975 4.08509 4.67609C4.08509 5.33964 4.00186 5.87448 3.83542 6.28059C3.66898 6.6867 3.3527 7.12286 2.88659 7.58909C2.76914 7.70642 2.71042 7.84336 2.71042 7.99992C2.71042 8.15648 2.76914 8.29342 2.88659 8.41075C3.3527 8.87698 3.66898 9.31636 3.83542 9.72892C4.00186 10.1416 4.08509 10.6745 4.08509 11.3278C4.08509 11.4941 4.14131 11.6335 4.25375 11.7461C4.36631 11.8585 4.50575 11.9148 4.67209 11.9148C5.33564 11.9148 5.87048 11.998 6.27659 12.1644C6.6827 12.3309 7.11886 12.6471 7.58509 13.1133C7.63531 13.1636 7.69725 13.2055 7.77092 13.2391C7.84459 13.2726 7.92075 13.2894 7.99942 13.2894ZM9.69042 10.7423C9.98264 10.7423 10.231 10.6396 10.4356 10.4343C10.64 10.2288 10.7423 9.97942 10.7423 9.68609C10.7423 9.39264 10.6399 9.14336 10.4351 8.93825C10.2302 8.73325 9.98148 8.63075 9.68892 8.63075C9.39625 8.63075 9.14736 8.73342 8.94225 8.93875C8.73725 9.1442 8.63475 9.39359 8.63475 9.68692C8.63475 9.98036 8.73736 10.2296 8.94259 10.4348C9.14792 10.6398 9.3972 10.7423 9.69042 10.7423ZM6.27992 10.7249L10.7289 6.27992L9.71992 5.27092L5.27492 9.71992L6.27992 10.7249ZM6.31375 7.36509C6.6072 7.36509 6.85648 7.26248 7.06159 7.05725C7.26659 6.85192 7.36909 6.60264 7.36909 6.30942C7.36909 6.0172 7.26642 5.76881 7.06109 5.56425C6.85564 5.35981 6.60625 5.25759 6.31292 5.25759C6.01948 5.25759 5.7702 5.35998 5.56509 5.56475C5.36009 5.76964 5.25759 6.01836 5.25759 6.31092C5.25759 6.60359 5.36025 6.85248 5.56559 7.05759C5.77103 7.26259 6.02042 7.36509 6.31375 7.36509Z" fill="#AA89F8" fill-opacity="0.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price-info">
+                                <span>1 690</span>₽
+                            </div> 
+                            <span class="month">/ <span>месяц</span></span> 
+                        </div>
+                        <ul class="info-list">
+                            <li>
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.24717 12.259H1.51667C1.09689 12.259 0.739166 12.1112 0.4435 11.8155C0.147833 11.5199 0 11.1622 0 10.7423V6.1355C0 5.28628 0.161667 4.48911 0.485 3.744C0.808333 2.999 1.24606 2.35039 1.79817 1.79817C2.35039 1.24606 2.999 0.808333 3.744 0.485C4.48911 0.161666 5.28628 0 6.1355 0C6.98472 0 7.78189 0.161666 8.527 0.485C9.272 0.808333 9.92061 1.24606 10.4728 1.79817C11.0249 2.35039 11.4627 2.999 11.786 3.744C12.1093 4.48911 12.271 5.28628 12.271 6.1355V10.7423C12.271 11.1622 12.1232 11.5199 11.8275 11.8155C11.5318 12.1112 11.1741 12.259 10.7543 12.259H8.02383V6.67867H10.7543V6.1355C10.7543 4.84883 10.3062 3.75733 9.40983 2.861C8.51361 1.96478 7.42217 1.51667 6.1355 1.51667C4.84883 1.51667 3.75733 1.96478 2.861 2.861C1.96478 3.75733 1.51667 4.84883 1.51667 6.1355V6.67867H4.24717V12.259ZM2.7305 8.19533H1.51667V10.7423H2.7305V8.19533ZM9.5405 8.19533V10.7423H10.7543V8.19533H9.5405Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>18 - 48 аудио</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.71454 13.4689C2.29476 13.4689 1.93704 13.3211 1.64138 13.0254C1.34571 12.7298 1.19788 12.372 1.19788 11.9523V4.04792C1.19788 3.62814 1.34571 3.27042 1.64138 2.97475C1.93704 2.67908 2.29476 2.53125 2.71454 2.53125H10.6189C11.0387 2.53125 11.3964 2.67908 11.692 2.97475C11.9877 3.27042 12.1355 3.62814 12.1355 4.04792V7.00008L14.8022 4.33342V11.6668L12.1355 9.00008V11.9523C12.1355 12.372 11.9877 12.7298 11.692 13.0254C11.3964 13.3211 11.0387 13.4689 10.6189 13.4689H2.71454ZM2.71454 11.9523H10.6189V4.04792H2.71454V11.9523Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>4 - 45 видео</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.04788 10.6189H11.9522V5.38125H4.04788V10.6189ZM2.71454 13.4689C2.29476 13.4689 1.93704 13.3211 1.64138 13.0254C1.34571 12.7298 1.19788 12.372 1.19788 11.9523V4.04792C1.19788 3.62814 1.34571 3.27042 1.64138 2.97475C1.93704 2.67908 2.29476 2.53125 2.71454 2.53125H13.2855C13.7053 2.53125 14.063 2.67908 14.3587 2.97475C14.6544 3.27042 14.8022 3.62814 14.8022 4.04792V11.9523C14.8022 12.372 14.6544 12.7298 14.3587 13.0254C14.063 13.3211 13.7053 13.4689 13.2855 13.4689H2.71454ZM2.71454 11.9523H13.2855V4.04792H2.71454V11.9523ZM5.23771 9.37725L6.70221 7.42225L7.65471 8.68675L8.95254 6.95625L10.7624 9.37725H5.23771Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>45 - 1000 изображений</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.6905 11.3093H9.35717V9.97592H4.6905V11.3093ZM4.6905 8.66642H11.3095V7.33309H4.6905V8.66642ZM4.6905 6.02359H11.3095V4.69026H4.6905V6.02359ZM3.38117 14.1353C2.96139 14.1353 2.60367 13.9874 2.308 13.6918C2.01234 13.3961 1.8645 13.0384 1.8645 12.6186V3.38092C1.8645 2.96115 2.01234 2.60342 2.308 2.30776C2.60367 2.01209 2.96139 1.86426 3.38117 1.86426H12.6188C13.0386 1.86426 13.3963 2.01209 13.692 2.30776C13.9877 2.60342 14.1355 2.96115 14.1355 3.38092V12.6186C14.1355 13.0384 13.9877 13.3961 13.692 13.6918C13.3963 13.9874 13.0386 14.1353 12.6188 14.1353H3.38117ZM3.38117 12.6186H12.6188V3.38092H3.38117V12.6186Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>35 - 1417 страниц текста</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="choose__btn btn2">Выбрать</button>
+                    </div>
+                    <div class="tariff pro">
+                        <div class="tariff-top">
+                            <h3 class="tariff-title">PRO</h3>
+                            <div class="info-text"><strong>1 200 000</strong> слов</div>
+                            <div class="info-text"><p><span>2.15</span> ₽ за <span>1 000</span> слов</p></div>
+                            <div class="sale">
+                                <span class="sale-text">слова не сгорают</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.00008 9.33333C4.00008 9.91111 4.11675 10.4583 4.35008 10.975C4.58341 11.4917 4.91675 11.9444 5.35008 12.3333C5.33897 12.2778 5.33341 12.2278 5.33341 12.1833V12.0333C5.33341 11.6778 5.40008 11.3444 5.53341 11.0333C5.66675 10.7222 5.86119 10.4389 6.11675 10.1833L8.00008 8.33333L9.88342 10.1833C10.139 10.4389 10.3334 10.7222 10.4667 11.0333C10.6001 11.3444 10.6667 11.6778 10.6667 12.0333V12.1833C10.6667 12.2278 10.6612 12.2778 10.6501 12.3333C11.0834 11.9444 11.4167 11.4917 11.6501 10.975C11.8834 10.4583 12.0001 9.91111 12.0001 9.33333C12.0001 8.77778 11.8973 8.25278 11.6917 7.75833C11.4862 7.26389 11.189 6.82222 10.8001 6.43333C10.5779 6.57778 10.3445 6.68611 10.1001 6.75833C9.85564 6.83056 9.60564 6.86667 9.35008 6.86667C8.66119 6.86667 8.06397 6.63889 7.55841 6.18333C7.05286 5.72778 6.76119 5.16667 6.68341 4.5C6.25008 4.86667 5.86675 5.24722 5.53341 5.64167C5.20008 6.03611 4.91953 6.43611 4.69175 6.84167C4.46397 7.24722 4.29175 7.66111 4.17508 8.08333C4.05841 8.50556 4.00008 8.92222 4.00008 9.33333ZM8.00008 10.2L7.05008 11.1333C6.92786 11.2556 6.83342 11.3944 6.76675 11.55C6.70008 11.7056 6.66675 11.8667 6.66675 12.0333C6.66675 12.3889 6.7973 12.6944 7.05841 12.95C7.31953 13.2056 7.63341 13.3333 8.00008 13.3333C8.36675 13.3333 8.68064 13.2056 8.94175 12.95C9.20286 12.6944 9.33342 12.3889 9.33342 12.0333C9.33342 11.8556 9.30008 11.6917 9.23342 11.5417C9.16675 11.3917 9.0723 11.2556 8.95008 11.1333L8.00008 10.2ZM8.00008 2V4.2C8.00008 4.57778 8.13064 4.89444 8.39175 5.15C8.65286 5.40556 8.9723 5.53333 9.35008 5.53333C9.55008 5.53333 9.73619 5.49167 9.90842 5.40833C10.0806 5.325 10.2334 5.2 10.3667 5.03333L10.6667 4.66667C11.489 5.13333 12.139 5.78333 12.6167 6.61667C13.0945 7.45 13.3334 8.35556 13.3334 9.33333C13.3334 10.8222 12.8167 12.0833 11.7834 13.1167C10.7501 14.15 9.48897 14.6667 8.00008 14.6667C6.51119 14.6667 5.25008 14.15 4.21675 13.1167C3.18341 12.0833 2.66675 10.8222 2.66675 9.33333C2.66675 7.9 3.1473 6.53889 4.10841 5.25C5.06953 3.96111 6.36675 2.87778 8.00008 2Z" fill="#DE96F9"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price-info">
+                                <span>2 590</span>₽
+                            </div> 
+                            <span class="month">/ <span>месяц</span></span> 
+                        </div>
+                        <ul class="info-list">
+                            <li>
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.24717 12.259H1.51667C1.09689 12.259 0.739166 12.1112 0.4435 11.8155C0.147833 11.5199 0 11.1622 0 10.7423V6.1355C0 5.28628 0.161667 4.48911 0.485 3.744C0.808333 2.999 1.24606 2.35039 1.79817 1.79817C2.35039 1.24606 2.999 0.808333 3.744 0.485C4.48911 0.161666 5.28628 0 6.1355 0C6.98472 0 7.78189 0.161666 8.527 0.485C9.272 0.808333 9.92061 1.24606 10.4728 1.79817C11.0249 2.35039 11.4627 2.999 11.786 3.744C12.1093 4.48911 12.271 5.28628 12.271 6.1355V10.7423C12.271 11.1622 12.1232 11.5199 11.8275 11.8155C11.5318 12.1112 11.1741 12.259 10.7543 12.259H8.02383V6.67867H10.7543V6.1355C10.7543 4.84883 10.3062 3.75733 9.40983 2.861C8.51361 1.96478 7.42217 1.51667 6.1355 1.51667C4.84883 1.51667 3.75733 1.96478 2.861 2.861C1.96478 3.75733 1.51667 4.84883 1.51667 6.1355V6.67867H4.24717V12.259ZM2.7305 8.19533H1.51667V10.7423H2.7305V8.19533ZM9.5405 8.19533V10.7423H10.7543V8.19533H9.5405Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>22 - 56 аудио</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.71454 13.4689C2.29476 13.4689 1.93704 13.3211 1.64138 13.0254C1.34571 12.7298 1.19788 12.372 1.19788 11.9523V4.04792C1.19788 3.62814 1.34571 3.27042 1.64138 2.97475C1.93704 2.67908 2.29476 2.53125 2.71454 2.53125H10.6189C11.0387 2.53125 11.3964 2.67908 11.692 2.97475C11.9877 3.27042 12.1355 3.62814 12.1355 4.04792V7.00008L14.8022 4.33342V11.6668L12.1355 9.00008V11.9523C12.1355 12.372 11.9877 12.7298 11.692 13.0254C11.3964 13.3211 11.0387 13.4689 10.6189 13.4689H2.71454ZM2.71454 11.9523H10.6189V4.04792H2.71454V11.9523Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>6 - 16 видео</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.04788 10.6189H11.9522V5.38125H4.04788V10.6189ZM2.71454 13.4689C2.29476 13.4689 1.93704 13.3211 1.64138 13.0254C1.34571 12.7298 1.19788 12.372 1.19788 11.9523V4.04792C1.19788 3.62814 1.34571 3.27042 1.64138 2.97475C1.93704 2.67908 2.29476 2.53125 2.71454 2.53125H13.2855C13.7053 2.53125 14.063 2.67908 14.3587 2.97475C14.6544 3.27042 14.8022 3.62814 14.8022 4.04792V11.9523C14.8022 12.372 14.6544 12.7298 14.3587 13.0254C14.063 13.3211 13.7053 13.4689 13.2855 13.4689H2.71454ZM2.71454 11.9523H13.2855V4.04792H2.71454V11.9523ZM5.23771 9.37725L6.70221 7.42225L7.65471 8.68675L8.95254 6.95625L10.7624 9.37725H5.23771Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>60 - 900 изображений</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.6905 11.3093H9.35717V9.97592H4.6905V11.3093ZM4.6905 8.66642H11.3095V7.33309H4.6905V8.66642ZM4.6905 6.02359H11.3095V4.69026H4.6905V6.02359ZM3.38117 14.1353C2.96139 14.1353 2.60367 13.9874 2.308 13.6918C2.01234 13.3961 1.8645 13.0384 1.8645 12.6186V3.38092C1.8645 2.96115 2.01234 2.60342 2.308 2.30776C2.60367 2.01209 2.96139 1.86426 3.38117 1.86426H12.6188C13.0386 1.86426 13.3963 2.01209 13.692 2.30776C13.9877 2.60342 14.1355 2.96115 14.1355 3.38092V12.6186C14.1355 13.0384 13.9877 13.3961 13.692 13.6918C13.3963 13.9874 13.0386 14.1353 12.6188 14.1353H3.38117ZM3.38117 12.6186H12.6188V3.38092H3.38117V12.6186Z" fill="#DE96F9"/>
+                                </svg>
+                                <span>47 - 1889 страниц текста</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="choose__btn btn2">Выбрать</button>
+                    </div>
+                </div>
+                <p class="tariffs-text">Объём в тарифе может отличаться в зависимости от нейросети</p>
+            </div>
+        </div>
+
+        <div class="possibilities">
+            <img src="assets/images/png/possibilitie-bg.png" alt="" class="possibilities-bg">
+            <div class="container">
+                <h2 class="title-text text-center">
+                    <span>Безграничные возможности</span>
+                    без VPN
+                </h2>
+                <div class="possibilities-box">
+                    <div class="possibilitie">
+                        <picture class="possibilitie-img">
+                            <source srcset="assets/images/webp/p1.webp" type="image/webp">
+                            <source srcset="assets/images/png/p1.png" type="image/png"> 
+                            <img src="assets/images/png/p1.png" alt="picture">
+                          </picture>
+                          <div class="possibilitie-info">
+                            <h3 class="info-title">Генерируй изображения превосходного качества</h3>
+                            <p class="info-text">Удобный инструментарий для создания <br>
+                                и редактирования изображений - <br>
+                                от ретуши до концепт-арта</p>
+                          </div>
+                    </div>
+                    <div class="possibilitie">
+                          <div class="possibilitie-info">
+                            <h3 class="info-title"><strong>Лучший выбор -</strong> <br>
+                                умный ИИ всегда под рукой</h3>
+                            <p class="info-text">Понятная речь, дружелюбный стиль, грамотные формулировки и структурные ответы, высокая скорость и доступная цена отлично подходит для: общения, учебы, задач по работе, повседневных задач. </p>
+                            <button type="button" class="try-free__btn btn">Попробовать бесплатно</button>
+                        </div>
+                        <picture class="possibilitie-img">
+                            <source srcset="assets/images/webp/p2.webp" type="image/webp">
+                            <source srcset="assets/images/png/p2.png" type="image/png"> 
+                            <img src="assets/images/png/p2.png"  alt="picture">
+                          </picture>
+                    </div>
+                    <div class="possibilitie">
+                        <picture class="possibilitie-img">
+                            <source srcset="assets/images/webp/p3.webp" type="image/webp">
+                            <source srcset="assets/images/png/p3.png" type="image/png"> 
+                            <img src="assets/images/png/p3.png"  alt="picture">
+                        </picture>
+                          <div class="possibilitie-info">
+                            <h3 class="info-title">Создавай любые видео</h3>
+                            <p class="info-text">От роликов для соцсетей до фантастических кинопроектов - ты можешь воплотить  всё, что можешь вообразить </p>
+                          </div>
+                    </div>
+                    <div class="possibilitie">
+                        <div class="picture">
+                            <picture class="possibilitie-img">
+                                <source srcset="assets/images/webp/p4.webp" type="image/webp">
+                                <source srcset="assets/images/png/p4.png" type="image/png"> 
+                                <img src="assets/images/png/p4.png"  alt="picture">
+                            </picture>
+                            <picture class="possibilitie-book">
+                                <source srcset="assets/images/webp/book.webp" type="image/webp">
+                                <source srcset="assets/images/png/book.png" type="image/png"> 
+                                <img src="assets/images/png/book.png"  alt="picture">
+                            </picture>
+                        </div>
+                          <div class="possibilitie-info">
+                            <h3 class="info-title">Пиши бестселлеры</h3>
+                            <p class="info-text">Создавай непредсказуемые сюжеты, захватывающие описания и оригинальных персонажей </p>
+                          </div>
+                    </div>
+                    <div class="possibilitie">
+                        <picture class="possibilitie-img">
+                            <source srcset="assets/images/webp/p5.webp" type="image/webp">
+                            <source srcset="assets/images/png/p5.png" type="image/png"> 
+                            <img src="assets/images/png/p5.png"  alt="picture">
+                        </picture>
+                          <div class="possibilitie-info">
+                            <h3 class="info-title">Работай со звуком как профи</h3>
+                            <p class="info-text">Создавай аранжировки и трэки с нуля</p>
+                          </div>
+                    </div>
+                    <div class="possibilitie">
+                        <div class="">
+                            <picture class="possibilitie-img">
+                                <source srcset="assets/images/webp/p6.webp" type="image/webp">
+                                <source srcset="assets/images/png/p6.png" type="image/png"> 
+                                <img src="assets/images/png/p6.png"  alt="picture">
+                            </picture>
+                            <picture class="possibilitie-img d-none">
+                                <source srcset="assets/images/webp/p6-mob.webp" type="image/webp">
+                                <source srcset="assets/images/png/p6-mob.png" type="image/png"> 
+                                <img src="assets/images/png/p6-mob.png"  alt="picture">
+                            </picture>
+                        </div>
+                          <div class="possibilitie-info">
+                            <h3 class="info-title">Работай с файлами</h3>
+                            <p class="info-text">Распознавание файлов, изображений, создание презентаций, анализ таблиц, pdf</p>
+                          </div>
+                    </div>
+                    <div class="possibilitie">
+                          <div class="possibilitie-info">
+                            <h3 class="info-title"><strong>Три модели</strong> под разные задачи</h3>
+                            <div class="info-item">
+                                <h3 class="item-title">Base</h3>
+                                <p class="item-text">Быстрые повседневные вопросы</p>
+                            </div>
+                            <div class="info-item">
+                                <h3 class="item-title">PRO</h3>
+                                <p class="item-text">Профессиональные задачи и экспертный уровень</p>
+                            </div>
+                            <div class="info-item">
+                                <h3 class="item-title">MultiCore</h3>
+                                <p class="item-text">Чистые ИИ для гибкости и экспериментов</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="possibilitie">
+                          <div class="possibilitie-info">
+                            <h3 class="info-title"><strong>LiftGPT — </strong>это десятки сильных ИИ в одном продукте</h3>
+                            <ul class="info-list">
+                                <li>Уникальное мульти-дообучение Base и Pro</li>
+                                <li>Лучшее от GPT, Claude, DeepSeek, Grok, Gemini в одном месте</li>
+                                <li>Сбалансированный стиль: умный, точный, творческий</li>
+                                <li>Результаты стабильнее, чем у одиночных моделей</li>
+                                <li>Удобный интерфейс и ничего лишнего</li>
+                            </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq" class="faqs">
+            <div class="container d-flex justify-between">
+                <div class="faqs-title">
+                    <h2 class="title-text">Нас часто спрашивают</h2>
+                    <p class="title-subtext">Остались еще вопросы ? Зайдайте их нам </p>
+                    <button type="button" class="ask-question__btn btn">Задать вопрос</button>
+                </div>
+                <div class="faqs-box">
+                    <div class="faq">
+                        <div class="faq-head">
+                            <h3 class="faq-title">Как долго выполняется заказ</h3>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.1852 7.91757L9.40005 4.60233C9.60065 4.39547 9.47906 4 9.21485 4H2.78515C2.52094 4 2.39935 4.39547 2.59995 4.60233L5.8148 7.91757C5.92137 8.02748 6.07863 8.02747 6.1852 7.91757Z" fill="black"/>
+                            </svg>
+                        </div>
+                        <div class="faq-body">
+                            <p class="faq-text">За это время мы выстроили долгосрочные отношения с клиентами, отточили процессы и доказали свою надежность.</p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-head">
+                            <h3 class="faq-title">Как долго выполняется заказ</h3>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.1852 7.91757L9.40005 4.60233C9.60065 4.39547 9.47906 4 9.21485 4H2.78515C2.52094 4 2.39935 4.39547 2.59995 4.60233L5.8148 7.91757C5.92137 8.02748 6.07863 8.02747 6.1852 7.91757Z" fill="black"/>
+                            </svg>
+                        </div>
+                        <div class="faq-body">
+                            <p class="faq-text">За это время мы выстроили долгосрочные отношения с клиентами, отточили процессы и доказали свою надежность.</p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-head">
+                            <h3 class="faq-title">Как долго выполняется заказ</h3>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.1852 7.91757L9.40005 4.60233C9.60065 4.39547 9.47906 4 9.21485 4H2.78515C2.52094 4 2.39935 4.39547 2.59995 4.60233L5.8148 7.91757C5.92137 8.02748 6.07863 8.02747 6.1852 7.91757Z" fill="black"/>
+                            </svg>
+                        </div>
+                        <div class="faq-body">
+                            <p class="faq-text">За это время мы выстроили долгосрочные отношения с клиентами, отточили процессы и доказали свою надежность.</p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-head">
+                            <h3 class="faq-title">Как долго выполняется заказ</h3>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.1852 7.91757L9.40005 4.60233C9.60065 4.39547 9.47906 4 9.21485 4H2.78515C2.52094 4 2.39935 4.39547 2.59995 4.60233L5.8148 7.91757C5.92137 8.02748 6.07863 8.02747 6.1852 7.91757Z" fill="black"/>
+                            </svg>
+                        </div>
+                        <div class="faq-body">
+                            <p class="faq-text">За это время мы выстроили долгосрочные отношения с клиентами, отточили процессы и доказали свою надежность.</p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-head">
+                            <h3 class="faq-title">Как долго выполняется заказ</h3>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.1852 7.91757L9.40005 4.60233C9.60065 4.39547 9.47906 4 9.21485 4H2.78515C2.52094 4 2.39935 4.39547 2.59995 4.60233L5.8148 7.91757C5.92137 8.02748 6.07863 8.02747 6.1852 7.91757Z" fill="black"/>
+                            </svg>
+                        </div>
+                        <div class="faq-body">
+                            <p class="faq-text">За это время мы выстроили долгосрочные отношения с клиентами, отточили процессы и доказали свою надежность.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container d-flex justify-between align-start">
+            <div class="footer-item">
+                <a href="#" class="logo d-flex align-center">
+                    <img src="assets/images/svg/logo.svg" alt="logo">
+                </a> 
+                <ul class="nav-list">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Публичная оферта</a></li>
+                    <li><a href="#">Политика cookies</a></li>
+                </ul>
+                <ul class="item-list">
+                    <li>
+                        Способы оплаты
+                        <div class="pay-list d-flex align-center">
+                            <img src="assets/images/svg/pay1.svg" alt="">
+                            <img src="assets/images/svg/pay2.svg" alt="">
+                            <img src="assets/images/svg/pay3.svg" alt="">
+                        </div>
+                    </li>
+                    <li>@2025 все права защищены</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2 class="item-title">Навигация</h2>
+                <ul class="nav-list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Отзывы клиентов</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-item d-none">
+                <div class="footer-menu__btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="#fff"/>
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#fff"/>
+                    </svg>
+                </div>
+                <div class="footer-menu">
+                    <ul class="nav-list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Отзывы клиентов</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                        <li><a href="#">Политика cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h2 class="item-title">Нужна помощь?</h2>
+                <button class="write-support__btn btn">Написать в поддержку</button>
+                <div class="socials d-flex">
+                    <a href="#" class="social">
+                        <img src="assets/images/svg/ins.svg" alt="">
+                    </a>
+                    <a href="#" class="social">
+                        <img src="assets/images/svg/ins.svg" alt="">
+                    </a>
+                    <a href="#" class="social">
+                        <img src="assets/images/svg/ins.svg" alt="">
+                    </a>
+                    <a href="#" class="social">
+                        <img src="assets/images/svg/ins.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    
+    
+
+      <!-- Зарегистрироваться -->
+      <div class="popUp popUp-register d-none">
+        <div class="popUp-content">
+            <div class="popUp-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#AA89F8"/>
+                </svg>                 
+            </div>
+            
+            <h2 class="popUp-title">Зарегистрироваться</h2>
+            <div class="register-box">
+                <form class="form">
+                    <div class="input-box">
+                        <input type="text" id="register-email" name="email" class="form-inp" placeholder="Укажите ваш email">
+                        <small></small>
+                    </div>
+                    <button type="button" class="register__btn btn disable">Зарегистрироваться</button>
+                </form>
+                <div class="or-register d-flex align-center justify-center flex-column">
+                    <p class="or-register__text">или зарегистрируйтесь с помощью:</p>
+                    <div class="d-flex">
+                        <a href="#">
+                            <img src="assets/images/svg/google.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/svg/yandex.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/svg/vk.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/svg/mail.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="register-result d-none">
+                <div class="info">
+                    <p class="info__text">Ваши данные для входа:</p>
+                    <p class="info__text">Мы продублировали эти данные на вашу почту</p>
+                </div>
+                <div class="result-info">
+                    <p class="result-info__text"><strong>Email:</strong> <span class="result-email"></span></p>
+                    <p class="result-info__text"><strong>Пароль:</strong> <span class="result-pass">vw58uy4wy8045yc40</span></p>
+                </div>
+                <button class="continue__btn btn">Продолжить</button>
+            </div>
+        </div>
+    </div>
+
+    
+      <!-- Войти -->
+      <div class="popUp popUp-login d-none">
+        <div class="popUp-content">
+            <div class="popUp-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#AA89F8"/>
+                </svg>                 
+            </div>
+            
+            <div class="login">
+                <h2 class="popUp-title">Войти</h2>
+                <div class="login-email-box">
+                    <form class="form">
+                        <div class="input-box">
+                            <input type="text" id="login-email" name="login-email" class="form-inp" placeholder="Укажите ваш email">
+                            <small></small>
+                        </div>
+                        <button type="button" class="login-continue__btn btn disable">Продолжить</button>
+                    </form>
+                </div>
+                <div class="login-pass-box d-none">
+                    <form class="form">
+                        <div class="input-box">
+                            <input type="password" id="login-pass" name="login-password" class="form-inp" placeholder="Введите пароль">
+                            <small></small>
+                        </div>
+                        <button type="button" class="login__btn btn">Войти</button>
+                    </form>
+                    <div class="btns d-flex justify-between align-center">
+                        <div class="backTo d-flex align-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4L13.41 5.41L7.83 11H20V13H7.83L13.41 18.59L12 20L4 12L12 4Z" fill="#AA89F8"/>
+                            </svg>
+                            <span>Назад</span>
+                        </div>
+                        <div class="forgot-pass">Забыли пароль?</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recover-pass d-none">
+                <h2 class="popUp-title">Восстановить пароль</h2>
+                <div class="recover-pass__form">
+                    <form class="form">
+                        <div class="input-box">
+                            <input type="text" id="recover-email" name="email" class="form-inp" placeholder="Укажите ваш email">
+                            <small></small>
+                        </div>
+                        <p class="info__text">Мы направим вам инструкцию <br> для восстановления пароля</p>
+                        <button type="button" class="recover-continue__btn btn">Продолжить</button>
+                    </form>
+                </div>
+                <div class="recover-pass__result d-none">
+                    <strong>Проверьте почту!</strong>
+                    <p class="info__text">Мы отправили вам инструкцию <br> для восстановления пароля</p>
+                    <button type="button" class="backTo-login__btn btn">К форме входа</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/plugin/swiper.js"></script>
+    <script src="assets/js/login_regis.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
