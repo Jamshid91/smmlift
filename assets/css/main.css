@@ -634,8 +634,6 @@ picture {
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
-  object-position: center;
 }
 .main .wrapper-bg:last-child {
   display: none;
@@ -643,7 +641,7 @@ picture {
 .main .wrapper-bg img {
   width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 .main .wrapper .container {
   position: relative;
