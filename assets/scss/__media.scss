@@ -687,7 +687,7 @@
         flex-wrap: wrap;
       }
       &:nth-child(3) {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         justify-content: end;
         align-items: end;
