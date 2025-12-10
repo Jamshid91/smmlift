@@ -908,6 +908,10 @@ picture {
 .main .wrapper .wrapper-slider .big-slider .wrapper-box .box-right .right-item:last-child img {
   margin-right: 28px;
 }
+.main .tools {
+  position: relative;
+  z-index: 5;
+}
 .main .tools .tools-box .tool {
   width: 33%;
   text-align: center;

@@ -898,6 +898,8 @@ body {
     }
 
     .tools {
+      position: relative;
+      z-index: 5;
       .tools-box {
         .tool {
           width: 33%;
