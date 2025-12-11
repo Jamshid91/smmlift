@@ -343,6 +343,10 @@ p {
 button {
   border-radius: 100px;
   font-weight: 700;
+  transition: 0.3s linear;
+}
+button:hover {
+  transition: 0.3s linear;
 }
 
 .btn {
@@ -350,11 +354,19 @@ button {
   background-image: linear-gradient(to left, #de96f9, #d292f9, #c58ff9, #b88cf8, #aa89f8);
   color: #fff;
 }
+.btn:hover {
+  background-image: linear-gradient(to left, #b88cf8, #aa89f8, #de96f9, #d292f9, #c58ff9);
+}
 
 .btn2 {
   background: linear-gradient(#F3F2F2) padding-box, linear-gradient(to left, #de96f9, #d292f9, #c58ff9, #b88cf8, #aa89f8) border-box;
   border: 2px solid transparent;
   color: #aa89f8;
+}
+.btn2:hover {
+  border: 2px solid white;
+  background-image: linear-gradient(to left, #de96f9, #d292f9, #c58ff9, #b88cf8, #aa89f8);
+  color: #fff;
 }
 
 .disable {
@@ -672,8 +684,8 @@ picture {
   padding: 24px;
   background: rgba(255, 255, 255, 0.5019607843);
   border-radius: 24px;
-  backdrop-filter: blur(20px);
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3), 0px 4px 0px 0px #F3F2F2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -808,6 +820,18 @@ picture {
   font-size: 20px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.5019607843);
+  position: relative;
+}
+.main .wrapper .wrapper-slider .swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #7837DF;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  transition: 0.3s linear;
 }
 .main .wrapper .wrapper-slider .swiper-pagination-bullet span {
   color: #7837DF;
@@ -823,7 +847,9 @@ picture {
 }
 .main .wrapper .wrapper-slider .swiper-pagination-bullet-active {
   color: #000;
-  border-bottom: 1px solid #7837DF;
+}
+.main .wrapper .wrapper-slider .swiper-pagination-bullet-active::before {
+  width: 100%;
 }
 .main .wrapper .wrapper-slider .swiper-wrapper {
   display: flex;
@@ -969,6 +995,10 @@ picture {
   box-shadow: 0px 4px 48px 0px rgba(0, 0, 0, 0.2);
   position: relative;
   backdrop-filter: blur(5px);
+  transition: 0.3s all;
+}
+.main .tariffs-box .tariff:hover {
+  transform: translateY(-5px);
 }
 .main .tariffs-box .tariff .sale {
   position: absolute;
@@ -1051,6 +1081,11 @@ picture {
   color: #aa89f8;
   background: linear-gradient(#fdfcfc) padding-box, linear-gradient(to left, #de96f9, #d292f9, #c58ff9, #b88cf8, #aa89f8) border-box;
 }
+.main .tariffs-box .tariff .choose__btn:hover {
+  border: 2px solid white;
+  background-image: linear-gradient(to left, #de96f9, #d292f9, #c58ff9, #b88cf8, #aa89f8);
+  color: #fff;
+}
 .main .tariffs-box .tariff.pro .sale {
   background: rgba(222, 150, 249, 0.1019607843);
 }
@@ -1093,10 +1128,11 @@ picture {
   height: 300px;
   border-radius: 24px;
   object-fit: cover;
+  transition: 0.3s linear;
 }
 .main .possibilities-box .possibilitie-info {
   background: rgba(255, 255, 255, 0.5019607843);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(12px);
   border-radius: 24px;
   padding: 24px;
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.2), 0px 4px 0px 0px #F3F2F2;
@@ -1275,6 +1311,9 @@ picture {
   content: url(../images/svg/left.svg);
   margin-right: 10px;
   margin-top: 3px;
+}
+.main .possibilities-box .possibilitie:hover .possibilitie-img img {
+  transform: scale(1.1);
 }
 .main .faqs {
   margin: 98px 0 48px;
@@ -1782,6 +1821,7 @@ picture {
   }
   .main .wrapper .wrapper-slider .top-slider {
     background: rgba(255, 255, 255, 0.5019607843);
+    backdrop-filter: blur(20px);
     border-radius: 24px;
     position: relative;
     margin: 0 16px;
@@ -1803,6 +1843,7 @@ picture {
   .main .wrapper .wrapper-slider .top-slider .wrapper-item {
     background: transparent !important;
     box-shadow: none;
+    backdrop-filter: none;
     border-radius: 0;
     padding: 0;
     max-width: 624px;

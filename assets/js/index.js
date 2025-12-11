@@ -30,6 +30,7 @@ var productSlider = new Swiper('.big-slider .swiper', {
   loop:true,
   resizeObserver:true,
   effect: "fade",
+  autoHeight: true,
   fadeEffect: {
     crossFade: true,
   },
@@ -48,7 +49,7 @@ var productThumbs = new Swiper('.top-slider .swiper', {
     loop: true,
     speed: 500,
     allowTouchMove: false,
-   
+    autoHeight: true,
     breakpoints: {
         0: {
           slidesPerView: 1,

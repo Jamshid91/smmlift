@@ -302,12 +302,19 @@ body {
   button {
     border-radius: 100px;
     font-weight: 700;
+    transition: .3s linear;
+    &:hover {
+      transition: .3s linear;
+    }
   }
 
   .btn {
     border: 2px solid #ffff;
     background-image: linear-gradient(to left, #de96f9, #d292f9, #c58ff9, #b88cf8, #aa89f8);
     color: #fff;
+    &:hover {
+      background-image: linear-gradient(to left, #b88cf8, #aa89f8, #de96f9, #d292f9, #c58ff9);
+    }
   }
   .btn2 {
     background: 
@@ -315,6 +322,11 @@ body {
     linear-gradient(to left, #de96f9, #d292f9, #c58ff9, #b88cf8, #aa89f8) border-box;
     border: 2px solid transparent;
     color: #aa89f8;
+    &:hover {
+      border: 2px solid #ffff;
+      background-image: linear-gradient(to left, #de96f9, #d292f9, #c58ff9, #b88cf8, #aa89f8);
+      color: #fff;
+    }
   }
 
   .disable {
@@ -650,8 +662,8 @@ body {
             padding: 24px;
             background: #FFFFFF80;
             border-radius: 24px;
-            backdrop-filter: blur(20px);
-            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(12px);
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3),  0px 4px 0px 0px #F3F2F2;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -792,6 +804,18 @@ body {
           font-size: 20px;
           font-weight: 700;
           color: #00000080;
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: #7837DF;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            transition: .3s linear;
+          }
           span {
             color: #7837DF;
           }
@@ -807,7 +831,9 @@ body {
         }
         .swiper-pagination-bullet-active {
           color: #000;
-          border-bottom: 1px solid #7837DF;
+          &::before {
+            width: 100%;
+          }
         }
         .swiper-wrapper {
           display: flex;
@@ -959,6 +985,10 @@ body {
           box-shadow: 0px 4px 48px 0px rgba(0, 0, 0, 0.2);
           position: relative;
           backdrop-filter: blur(5px);
+          transition: .3s all;
+          &:hover {
+            transform: translateY(-5px);
+          }
           .sale {
             position: absolute;
             top: 24px;
@@ -1043,6 +1073,11 @@ body {
             background: 
             linear-gradient(#fdfcfc) padding-box, 
             linear-gradient(to left, #de96f9, #d292f9, #c58ff9, #b88cf8, #aa89f8) border-box;
+            &:hover {
+              border: 2px solid #ffff;
+              background-image: linear-gradient(to left, #de96f9, #d292f9, #c58ff9, #b88cf8, #aa89f8);
+              color: #fff;
+            }
           }
         }
         .tariff.pro {
@@ -1090,11 +1125,12 @@ body {
               height: 300px;
               border-radius: 24px;
               object-fit: cover;
+              transition: .3s linear;
             }
           }
           &-info {
             background: #FFFFFF80;
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(12px);
             border-radius: 24px;
             padding: 24px;
             box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.2), 0px 4px 0px 0px #F3F2F2;
@@ -1287,6 +1323,11 @@ body {
                   }
                 }
               }
+            }
+          }
+          &:hover .possibilitie-img {
+            img {
+              transform: scale(1.1);
             }
           }
         }
