@@ -387,6 +387,8 @@ picture {
 }
 
 .logo img {
+  width: 210px;
+  object-fit: contain;
   margin-right: 16px;
 }
 .logo span {
@@ -636,7 +638,7 @@ picture {
 }
 
 .main {
-  overflow: hidden;
+  transition: 0.5s linear;
 }
 .main .wrapper {
   padding-top: 178px;
@@ -646,14 +648,11 @@ picture {
   position: absolute;
   top: 0;
   left: 0;
+  object-fit: cover;
+  object-position: top;
 }
 .main .wrapper-bg:last-child {
   display: none;
-}
-.main .wrapper-bg img {
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
 }
 .main .wrapper .container {
   position: relative;
@@ -1112,6 +1111,10 @@ picture {
   top: 0;
   left: 0;
 }
+.main .possibilities .container {
+  position: relative;
+  z-index: 5;
+}
 .main .possibilities-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1123,7 +1126,7 @@ picture {
 .main .possibilities-box .possibilitie {
   position: relative;
 }
-.main .possibilities-box .possibilitie-img img {
+.main .possibilities-box .possibilitie-img {
   width: 396px;
   height: 300px;
   border-radius: 24px;
@@ -1189,8 +1192,6 @@ picture {
 }
 .main .possibilities-box .possibilitie:nth-child(2) .possibilitie-img {
   margin-top: -60px;
-}
-.main .possibilities-box .possibilitie:nth-child(2) .possibilitie-img img {
   width: 214px;
 }
 .main .possibilities-box .possibilitie:nth-child(3) .possibilitie-info {
@@ -1200,21 +1201,22 @@ picture {
   width: 350px;
   z-index: 3;
 }
+.main .possibilities-box .possibilitie:nth-child(3) .possibilitie-img:last-child {
+  display: none;
+}
 .main .possibilities-box .possibilitie:nth-child(4) {
   padding-top: 70px;
 }
 .main .possibilities-box .possibilitie:nth-child(4) .picture {
   position: relative;
 }
-.main .possibilities-box .possibilitie:nth-child(4) .picture .possibilitie-img img {
+.main .possibilities-box .possibilitie:nth-child(4) .picture .possibilitie-img {
   height: 180px;
 }
 .main .possibilities-box .possibilitie:nth-child(4) .picture .possibilitie-book {
   position: absolute;
   left: 29%;
   bottom: 20%;
-}
-.main .possibilities-box .possibilitie:nth-child(4) .picture .possibilitie-book img {
   width: 294px;
 }
 .main .possibilities-box .possibilitie:nth-child(4) .possibilitie-info {
@@ -1235,8 +1237,6 @@ picture {
   position: absolute;
   top: 2%;
   left: 33%;
-}
-.main .possibilities-box .possibilitie:nth-child(5) .possibilitie-img img {
   width: 436px;
   height: auto;
 }
@@ -1248,8 +1248,6 @@ picture {
 }
 .main .possibilities-box .possibilitie:nth-child(6) .possibilitie-img {
   transform: translate(-30px, -50px);
-}
-.main .possibilities-box .possibilitie:nth-child(6) .possibilitie-img img {
   width: 304px;
   height: auto;
 }
@@ -1312,8 +1310,11 @@ picture {
   margin-right: 10px;
   margin-top: 3px;
 }
-.main .possibilities-box .possibilitie:hover .possibilitie-img img {
+.main .possibilities-box .possibilitie:hover .possibilitie-img {
   transform: scale(1.1);
+}
+.main .possibilities-box .possibilitie:nth-child(6):hover .possibilitie-img {
+  transform: translate(-30px, -50px) scale(1.1);
 }
 .main .faqs {
   margin: 98px 0 48px;
@@ -1796,6 +1797,9 @@ picture {
   .main .possibilities-box .possibilitie:nth-child(8) .possibilitie-info .info-list li::before {
     margin-right: 6px;
   }
+  .main .possibilities-box .possibilitie:hover .possibilitie-img {
+    transform: scale(1) !important;
+  }
 }
 @media (max-width: 992px) {
   .title-text {
@@ -1819,26 +1823,46 @@ picture {
   .main .wrapper .swiper-btns {
     display: none;
   }
+  .main .wrapper .wrapper-slider {
+    position: relative;
+  }
+  .main .wrapper .wrapper-slider .pagination {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .main .wrapper .wrapper-slider .pagination .pagination-box {
+    width: 100%;
+    height: 92%;
+  }
+  .main .wrapper .wrapper-slider .swiper-pagination {
+    position: sticky;
+    top: 70px;
+    bottom: 200px;
+    backdrop-filter: blur(12px);
+    padding-top: 4px;
+    height: 40px;
+    width: 90%;
+    margin: 0 auto 0;
+    border-radius: 24px;
+  }
   .main .wrapper .wrapper-slider .top-slider {
     background: rgba(255, 255, 255, 0.5019607843);
     backdrop-filter: blur(20px);
     border-radius: 24px;
     position: relative;
-    margin: 0 16px;
-    overflow: hidden;
+    margin: 0 16px 20px;
     padding: 80px 24px 24px;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
   }
-  .main .wrapper .wrapper-slider .top-slider .swiper-pagination {
-    position: absolute;
-    top: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    height: 36px;
-  }
   .main .wrapper .wrapper-slider .top-slider .swiper {
     padding: 0 0 20px;
+  }
+  .main .wrapper .wrapper-slider .top-slider .swiper-wrapper {
+    display: flex;
+    align-items: start;
   }
   .main .wrapper .wrapper-slider .top-slider .wrapper-item {
     background: transparent !important;
@@ -1849,15 +1873,18 @@ picture {
     max-width: 624px;
     margin: 0 auto;
   }
+  .main .wrapper .wrapper-slider .top-slider .wrapper-item .info-text {
+    display: block;
+  }
   .main .wrapper .wrapper-slider .top-slider .swiper-slide-active {
     width: 100%;
     transform: none;
   }
-  .main .wrapper .wrapper-slider .top-slider .swiper-slide-active .wrapper-item {
-    width: 100%;
-  }
   .main .wrapper .wrapper-slider .big-slider {
     margin-top: 7px;
+  }
+  .main .wrapper .wrapper-slider .big-slider .swiper {
+    padding-top: 0;
   }
   .main .wrapper .wrapper-slider .big-slider .wrapper-box {
     flex-direction: column;
@@ -2056,8 +2083,6 @@ picture {
   .main .possibilities-box .possibilitie:nth-child(1) .possibilitie-img {
     margin-left: -10%;
     width: 70%;
-  }
-  .main .possibilities-box .possibilitie:nth-child(1) .possibilitie-img img {
     width: 100%;
     height: 200px;
   }
@@ -2068,7 +2093,7 @@ picture {
     right: 0;
     width: 70%;
     padding: 16px;
-    z-index: 5;
+    z-index: 10;
   }
   .main .possibilities-box .possibilitie:nth-child(2) {
     width: 100%;
@@ -2082,16 +2107,12 @@ picture {
   .main .possibilities-box .possibilitie:nth-child(2) .possibilitie-img {
     margin-top: 0;
     width: 142px;
-    display: inline-block;
-  }
-  .main .possibilities-box .possibilitie:nth-child(2) .possibilitie-img img {
-    width: 142px;
     height: 220px;
     object-fit: contain;
   }
   .main .possibilities-box .possibilitie:nth-child(3) {
     order: 3;
-    margin-top: 70px;
+    margin-top: 80px;
     display: flex;
     justify-content: end;
     position: relative;
@@ -2104,12 +2125,16 @@ picture {
     padding: 16px;
   }
   .main .possibilities-box .possibilitie:nth-child(3) .possibilitie-img {
-    margin-right: -10%;
-    width: 70%;
+    position: relative;
+    right: -6%;
+    height: 220px;
+    border-radius: 24px 0 0 24px;
   }
-  .main .possibilities-box .possibilitie:nth-child(3) .possibilitie-img img {
-    width: 100%;
-    height: 200px;
+  .main .possibilities-box .possibilitie:nth-child(3) .possibilitie-img:first-child {
+    display: none;
+  }
+  .main .possibilities-box .possibilitie:nth-child(3) .possibilitie-img:last-child {
+    display: block;
   }
   .main .possibilities-box .possibilitie:nth-child(4) {
     order: 4;
@@ -2124,14 +2149,9 @@ picture {
     width: 70%;
     margin-left: -10%;
   }
-  .main .possibilities-box .possibilitie:nth-child(4) .picture .possibilitie-img img {
-    width: 100%;
-  }
   .main .possibilities-box .possibilitie:nth-child(4) .picture .possibilitie-book {
     left: 5%;
     bottom: 10%;
-  }
-  .main .possibilities-box .possibilitie:nth-child(4) .picture .possibilitie-book img {
     width: 254px;
   }
   .main .possibilities-box .possibilitie:nth-child(4) .possibilitie-info {
@@ -2146,15 +2166,13 @@ picture {
   }
   .main .possibilities-box .possibilitie:nth-child(5) .possibilitie-info {
     width: 80%;
+    padding: 16px;
   }
   .main .possibilities-box .possibilitie:nth-child(5) .possibilitie-img {
     position: absolute;
     top: -60%;
     left: auto;
     right: 0;
-    width: auto;
-  }
-  .main .possibilities-box .possibilitie:nth-child(5) .possibilitie-img img {
     width: 436px;
     object-position: right;
   }
@@ -2177,9 +2195,8 @@ picture {
     margin-right: -16px;
     position: relative;
     z-index: 5;
-  }
-  .main .possibilities-box .possibilitie:nth-child(6) .possibilitie-img img {
-    width: 175px;
+    width: 155px;
+    transform: translate(10px, -10px) !important;
   }
   .footer {
     padding: 32px 0;
@@ -2305,14 +2322,14 @@ picture {
   .main .wrapper-bg:last-child {
     display: block;
   }
-  .main .wrapper .wrapper-slider .top-slider {
-    padding: 62px 16px 20px;
-  }
-  .main .wrapper .wrapper-slider .top-slider .swiper-pagination-bullet {
+  .main .wrapper .wrapper-slider .swiper-pagination-bullet {
     width: 80px;
     height: 26px !important;
     font-size: 12px;
     white-space: nowrap;
+  }
+  .main .wrapper .wrapper-slider .top-slider {
+    padding: 62px 16px 20px;
   }
   .main .wrapper .wrapper-slider .top-slider .swiper {
     padding: 0;

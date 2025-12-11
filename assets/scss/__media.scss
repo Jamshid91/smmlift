@@ -199,6 +199,9 @@
               }
             }
           }
+          &:hover .possibilitie-img {
+            transform: scale(1) !important;
+          }
         }
       }
     }
@@ -233,25 +236,44 @@
         display: none;
       }
       .wrapper-slider {
+        position: relative;
+        .pagination {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          .pagination-box {
+            width: 100%;
+            height: 92%;
+          }
+        }
+        .swiper-pagination {
+          position: sticky;
+          top: 70px;
+          bottom: 200px;
+          backdrop-filter: blur(12px);
+          padding-top: 4px;
+          height: 40px;
+          width: 90%;
+          margin: 0 auto 0;
+          border-radius: 24px;
+        }
         .top-slider {
           background: #FFFFFF80;
           backdrop-filter: blur(20px);
           border-radius: 24px;
           position: relative;
-          margin: 0 16px;
-          overflow: hidden;
+          margin: 0 16px 20px;
+          // overflow: hidden;
           padding: 80px 24px 24px;
           box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
-          .swiper-pagination {
-            position: absolute;
-            top: 16px;
-            left: 50%;
-            transform: translateX(-50%);
-            margin: 0;
-            height: 36px;
-          }
           .swiper {
             padding:0 0 20px;
+          }
+          .swiper-wrapper {
+            display: flex;
+            align-items: start;
           }
           .wrapper-item {
             background: transparent !important;
@@ -261,13 +283,13 @@
             padding: 0;
             max-width: 624px;
             margin: 0 auto;
+            .info-text {
+              display: block;
+            }
           }
           .swiper-slide-active {
             width: 100%;
             transform: none;
-            .wrapper-item {
-              width: 100%;
-            }
           }
         }
         
@@ -275,6 +297,9 @@
 
         .big-slider {
           margin-top: 7px;
+          .swiper {
+            padding-top: 0;
+          }
           .wrapper-box {
             flex-direction: column;
             .box-left {
@@ -495,10 +520,8 @@
             .possibilitie-img {
               margin-left: -10%;
               width: 70%;
-              img {
-                width: 100%;
-                height: 200px;
-              }
+              width: 100%;
+              height: 200px;
             }
             .possibilitie-info {
               position: absolute;
@@ -507,7 +530,7 @@
               right: 0;
               width: 70%;
               padding: 16px;
-              z-index: 5;
+              z-index: 10;
             }
           }
           &:nth-child(2) {
@@ -521,17 +544,13 @@
             .possibilitie-img {
               margin-top: 0;
               width: 142px;
-              display: inline-block;
-              img {
-                width: 142px;
-                height: 220px;
-                object-fit: contain;
-              }
+              height: 220px;
+              object-fit: contain;
             }
           }
           &:nth-child(3) {
             order: 3;
-            margin-top: 70px;
+            margin-top: 80px;
             display: flex;
             justify-content: end;
             position: relative;
@@ -543,11 +562,15 @@
               padding: 16px;
             }
             .possibilitie-img {
-              margin-right: -10%;
-              width: 70%;
-              img {
-                width: 100%;
-                height: 200px;
+              position: relative;
+              right: -6%;
+              height: 220px;
+              border-radius: 24px 0 0 24px;
+              &:first-child {
+                display: none;
+              }
+              &:last-child {
+                display: block;
               }
             }
           }
@@ -561,16 +584,11 @@
               .possibilitie-img {
                 width: 70%;
                 margin-left: -10%;
-                img {
-                width: 100%;
-              }
               }
               .possibilitie-book {
                 left: 5%;
                 bottom: 10%;
-                img {
-                  width: 254px;
-                }
+                width: 254px;
               }
             }
             .possibilitie-info {
@@ -586,17 +604,15 @@
             margin-top: 100px;
             .possibilitie-info {
               width: 80%;
+              padding: 16px;
             }
             .possibilitie-img {
               position: absolute;
               top: -60%;
               left: auto;
               right: 0;
-              width: auto;
-              img {
-                width: 436px;
-                object-position: right;
-              }
+              width: 436px;
+              object-position: right;
             }
           }
           
@@ -618,9 +634,8 @@
               margin-right: -16px;
               position: relative;
               z-index: 5;
-              img {
-                width: 175px;
-              }
+              width: 155px;
+              transform: translate(10px, -10px) !important;
             }
           }
         }
@@ -772,14 +787,14 @@
 
       
       .wrapper-slider {
+        .swiper-pagination-bullet {
+          width: 80px;
+          height: 26px !important;
+          font-size: 12px;
+          white-space: nowrap;
+        }
         .top-slider {
           padding: 62px 16px 20px;
-          .swiper-pagination-bullet {
-            width: 80px;
-            height: 26px !important;
-            font-size: 12px;
-            white-space: nowrap;
-          }
           .swiper {
             padding:0;
           }

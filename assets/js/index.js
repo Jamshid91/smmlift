@@ -29,7 +29,7 @@ var productSlider = new Swiper('.big-slider .swiper', {
   centeredSlides: false,
   loop:true,
   resizeObserver:true,
-  effect: "fade",
+  effect: 'fade',
   autoHeight: true,
   fadeEffect: {
     crossFade: true,
@@ -50,29 +50,20 @@ var productThumbs = new Swiper('.top-slider .swiper', {
     speed: 500,
     allowTouchMove: false,
     autoHeight: true,
+    effect: 'slide',
     breakpoints: {
         0: {
           slidesPerView: 1,
           spaceBetween: 30,
-          effect: "fade",
           centeredSlides: false,
+          effect: 'fade',
         },
         992: {
           spaceBetween: 30,
           slidesPerView: 3,
           centeredSlides: true,
           slideToClickedSlide: true,
-          // effect: 'coverflow',
-          // grabCursor: true,
-          // centeredSlides: true,
-          // slidesPerView: 'auto',
-          // coverflowEffect: {
-          //     rotate: 0,
-          //     stretch: 80,
-          //     depth: 200,
-          //     modifier: 1,
-          //     slideShadows: false,
-          // },
+          effect: 'slide',
         },
   },
     

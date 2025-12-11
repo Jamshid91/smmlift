@@ -17,6 +17,7 @@ body {
   font-weight: 300;
   color: #000;
   background: #f3f2f2;
+  
 }
   
   .bodyStopScroll {
@@ -348,6 +349,8 @@ body {
 
   .logo {
     img {
+      width: 210px;
+      object-fit: contain;
       margin-right: 16px;
     }
     span {
@@ -618,7 +621,8 @@ body {
   }
 
   .main {
-    overflow: hidden;
+    // overflow: hidden;
+    transition: .5s linear;
     .wrapper {
       padding-top: 178px;
       &-bg {
@@ -626,14 +630,11 @@ body {
         position: absolute;
         top: 0;
         left: 0;
+        object-fit: cover;
+        object-position: top;
         &:last-child {
           display: none;
-        }                                                  
-        img {
-          width: 100%;
-          object-fit: cover;
-          object-position: top;
-        }
+        }    
       }
       .container {
         position: relative;
@@ -1110,6 +1111,10 @@ body {
         top: 0;
         left: 0;
       }
+      .container {
+        position: relative;
+        z-index: 5;
+      }
       &-box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1120,13 +1125,11 @@ body {
         .possibilitie {
           position: relative;
           &-img {
-            img {
-              width: 396px;
-              height: 300px;
-              border-radius: 24px;
-              object-fit: cover;
-              transition: .3s linear;
-            }
+            width: 396px;
+            height: 300px;
+            border-radius: 24px;
+            object-fit: cover;
+            transition: .3s linear;
           }
           &-info {
             background: #FFFFFF80;
@@ -1187,9 +1190,7 @@ body {
             }
             .possibilitie-img {
               margin-top: -60px;
-              img {
-                width: 214px;
-              }
+              width: 214px;
             }
           }
           &:nth-child(3) {
@@ -1200,21 +1201,22 @@ body {
               width: 350px;
               z-index: 3;
             }
+            .possibilitie-img:last-child {
+              display: none;
+            }
           }
           &:nth-child(4) {
             padding-top: 70px;
             .picture {
               position: relative;
-              .possibilitie-img img {
+              .possibilitie-img {
                 height: 180px;
               }
               .possibilitie-book {
                 position: absolute;
                 left: 29%;
                 bottom: 20%;
-                img {
-                  width: 294px;
-                }
+                width: 294px;
               }
             }
             .possibilitie-info {
@@ -1236,10 +1238,8 @@ body {
               position: absolute;
               top: 2%;
               left: 33%;
-              img {
-                width: 436px;
-                height: auto;
-              }
+              width: 436px;
+              height: auto;
             }
           }
           
@@ -1252,10 +1252,8 @@ body {
             }
             .possibilitie-img {
               transform: translate(-30px, -50px);
-              img {
-                width: 304px;
-                height: auto;
-              }
+              width: 304px;
+              height: auto;
             }
           }
           
@@ -1326,9 +1324,10 @@ body {
             }
           }
           &:hover .possibilitie-img {
-            img {
-              transform: scale(1.1);
-            }
+            transform: scale(1.1);
+          }
+          &:nth-child(6):hover .possibilitie-img {
+            transform: translate(-30px, -50px) scale(1.1);
           }
         }
       }
